@@ -1,0 +1,30 @@
+// Define the add function
+function add(a, b) {
+  return a + b;
+}
+
+// Define the subtract function
+function subtract(a, b) {
+  return a - b;
+}
+
+// Define the multiply function
+function multiply(a, b) {
+  return a * b;
+}
+
+// Define the divide function
+function divide(a, b) {
+  if (b !== 0) {
+    return a / b;
+  } else {
+    return "Cannot divide by zero";
+  }
+}
+
+// Example usage
+console.log("Addition:", add(5, 3));       // Output: 8
+console.log("Subtraction:", subtract(10, 4)); // Output: 6
+console.log("Multiplication:", multiply(2, 7)); // Output: 14
+console.log("Division:", divide(20, 5));   // Output: 4
+console.log("Division:", divide(10, 0));   // Output: Cannot divide by zero
