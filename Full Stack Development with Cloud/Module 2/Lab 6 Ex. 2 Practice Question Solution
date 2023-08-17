@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Landing Page</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  nav a:hover {
+    background-color: #555;
+  }
+  .main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+  }
+  .main-content img {
+    max-width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .gradient-section {
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+    padding: 40px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Landing Page</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="main-content">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+  </div>
+  <div class="gradient-section">
+    <h2>Check Out Our Services</h2>
+    <p>We offer a wide range of services to meet your needs.</p>
+  </div>
+</body>
+</html>
