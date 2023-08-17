@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog Post</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  nav {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+  }
+  .content {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+  }
+  .sidebar {
+    float: right;
+    width: 30%;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+  }
+  .sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Blog Post Title</h1>
+  </header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Blog</a>
+    <a href="#">Contact</a>
+  </nav>
+  <div class="content">
+    <h2>Blog Post Title</h2>
+    <p><strong>Author:</strong> John Doe</p>
+    <p><strong>Publication Date:</strong> August 17, 2023</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis risus id erat convallis, vel congue libero volutpat.</p>
+  </div>
+  <div class="sidebar">
+    <h2>Recent Posts</h2>
+    <ul>
+      <li><a href="#">Post 1</a></li>
+      <li><a href="#">Post 2</a></li>
+      <li><a href="#">Post 3</a></li>
+    </ul>
+  </div>
+</body>
+</html>
