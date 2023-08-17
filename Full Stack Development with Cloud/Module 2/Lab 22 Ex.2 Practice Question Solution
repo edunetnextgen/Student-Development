@@ -1,0 +1,22 @@
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    
+    def calculate_area(self):
+        return self.width * self.height
+    
+    def calculate_perimeter(self):
+        return 2 * (self.width + self.height)
+
+# Create an instance of the Rectangle class
+width = float(input("Enter the width of the rectangle: "))
+height = float(input("Enter the height of the rectangle: "))
+rectangle = Rectangle(width, height)
+
+# Calculate and display the area and perimeter of the rectangle
+area = rectangle.calculate_area()
+perimeter = rectangle.calculate_perimeter()
+
+print(f"Rectangle Area: {area}")
+print(f"Rectangle Perimeter: {perimeter}")
