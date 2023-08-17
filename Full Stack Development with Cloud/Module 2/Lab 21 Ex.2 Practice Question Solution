@@ -1,0 +1,20 @@
+def calculate_grade(percentage):
+    if percentage >= 90:
+        return "A"
+    elif percentage >= 80:
+        return "B"
+    elif percentage >= 70:
+        return "C"
+    elif percentage >= 60:
+        return "D"
+    else:
+        return "F"
+
+# Get the percentage score from the user
+percentage = float(input("Enter the percentage score: "))
+
+# Call the function to calculate the grade
+grade = calculate_grade(percentage)
+
+# Display the grade
+print(f"Your grade is: {grade}")
