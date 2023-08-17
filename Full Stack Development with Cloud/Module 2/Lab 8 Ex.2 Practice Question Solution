@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Interaction Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <h1>User Interaction Example</h1>
+  <p>Click the buttons below to see console messages and dialog boxes.</p>
+  
+  <button id="consoleButton">Show Console Message</button>
+  <button id="dialogButton">Show Dialog Box</button>
+
+  <script>
+    // Console message function
+    function showMessageInConsole() {
+      console.log("Hello! This message is displayed in the console.");
+    }
+
+    // Dialog box function
+    function showDialogBox() {
+      alert("This is a dialog box.\nYou can use it to display important information.");
+    }
+
+    // Attach event listeners to buttons
+    const consoleButton = document.getElementById("consoleButton");
+    const dialogButton = document.getElementById("dialogButton");
+
+    consoleButton.addEventListener("click", showMessageInConsole);
+    dialogButton.addEventListener("click", showDialogBox);
+  </script>
+</body>
+</html>
