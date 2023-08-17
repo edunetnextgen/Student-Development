@@ -1,0 +1,6 @@
+Creating a complex layout for a landing page. Implement the following advanced CSS properties to achieve the desired design:
+	CSS Grid to create a responsive three-column layout for the main content area. 
+	Apply a background image to the header section, covering the entire width and height of the viewport. 
+	Use CSS transitions to create a smooth hover effect on links. 
+	Implement a gradient background color for a section of your choice. 
+	Add a drop shadow to an image in the main content area.
