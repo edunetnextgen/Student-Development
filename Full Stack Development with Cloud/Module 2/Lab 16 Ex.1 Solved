@@ -1,0 +1,80 @@
+Creating a responsive layout using Bootstrap's containers and the grid system. Follow the instructions below to achieve the desired outcome:
+Create an HTML page. Integrate Bootstrap into your HTML page by including the necessary CSS and JavaScript files from the provided Bootstrap.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Styled Containers & Grid</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS styles -->
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            margin-top: 50px;
+        }
+        
+        .custom-header {
+            text-align: center;
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .custom-column {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .custom-primary {
+            background-color: #27ae60;
+            color: #fff;
+        }
+        
+        .custom-secondary {
+            background-color: #e74fff;
+            color: #fff;
+        }
+        
+        h3 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Container for the main content -->
+    <div class="container">
+        <div class="custom-header">
+            <h1>Custom Styled Layout with Containers & Grid</h1>
+        </div>
+
+        <!-- Custom Grid system for responsive layout -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="custom-column custom-primary">
+                    <h3>Column 1</h3>
+                    <p>This is the left column with a custom primary background.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="custom-column custom-secondary">
+                    <h3>Column 2</h3>
+                    <p>This is the right column with a custom secondary background.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
