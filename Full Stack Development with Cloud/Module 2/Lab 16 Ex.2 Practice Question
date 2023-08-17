@@ -1,0 +1,7 @@
+Creating a responsive layout for a portfolio webpage using Bootstrap's containers and the grid system. 
+	Create an HTML page. 
+	Integrate Bootstrap into your HTML page by including the necessary CSS and JavaScript files from the provided Bootstrap
+	Create a Bootstrap container to hold the main content.
+	Divide the container into different columns using the Bootstrap grid system.
+	Place an image inside each column.
+	Apply custom CSS to style the images and text content. Use appropriate spacing, fonts, and colors to enhance the presentation.
