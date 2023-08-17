@@ -1,0 +1,4 @@
+Design a webpage's interactivity using jQuery events and effects. Design a simple HTML page with the following elements and functionalities:
+	Toggle Display: Create a button element labeled "Toggle Text" and a div element below it. When the button is clicked, toggle the visibility of the div's text content using a fade effect. The text content should smoothly fade in or fade out.
+	Hover Effect: Include an image element in the form of a thumbnail (e.g., a small image). When a user hovers their mouse over the thumbnail, the image should smoothly transition to a larger size. When the user moves the mouse away, the image should smoothly transition back to its original size.
+	Click Event with Animation: Add a set of three paragraph elements. When a user clicks on a paragraph, it should expand in height to reveal more content. Clicking again should collapse the paragraph back to its original height.
