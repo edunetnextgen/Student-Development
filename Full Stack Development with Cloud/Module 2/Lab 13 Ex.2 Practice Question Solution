@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery User Experience</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  li:hover {
+    background-color: #f5f5f5;
+  }
+  #toggleButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #hiddenParagraph {
+    display: none;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+  }
+</style>
+</head>
+<body>
+  <h1>jQuery User Experience</h1>
+
+  <ul>
+    <li>Mouse</li>
+    <li>Elephant</li>
+    <li>Giraffe</li>
+  </ul>
+
+  <button id="toggleButton">Toggle Paragraph</button>
+  <p id="hiddenParagraph">This paragraph can be toggled.</p>
+
+  <script>
+    $(document).ready(function() {
+      // Highlight Selection
+      $("li").click(function() {
+        $("li").css("background-color", "white"); // Reset other items
+        $(this).css("background-color", "#f5f5f5");
+      });
+
+      // Toggle Paragraph
+      $("#toggleButton").click(function() {
+        $("#hiddenParagraph").toggle();
+      });
+    });
+  </script>
+</body>
+</html>
