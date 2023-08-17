@@ -1,0 +1,17 @@
+def fibonacci_series(length):
+    fib_series = []
+    a, b = 0, 1
+    for _ in range(length):
+        fib_series.append(a)
+        a, b = b, a + b
+    return fib_series
+
+# Get the length of the Fibonacci series from the user
+length = int(input("Enter the length of the Fibonacci series: "))
+
+# Call the function to generate the Fibonacci series
+result = fibonacci_series(length)
+
+# Display the Fibonacci series
+print("Fibonacci Series:")
+print(result)
