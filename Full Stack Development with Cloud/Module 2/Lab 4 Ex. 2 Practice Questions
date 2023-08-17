@@ -1,0 +1,4 @@
+An HTML document that includes a list of products. Your task is to style the list items differently based on their categories. Use appropriate CSS selectors to apply styling to the different categories:
+	Apply a background color to all list items.
+	Apply a border to list items with the class.
+
