@@ -1,0 +1,151 @@
+An HTML page with CSS3 Essentials and whole Layout Technique
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Essentials & Layout Techniques</title>
+    <style>
+        /* Styling the body */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        /* Styling the header */
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        /* Styling navigation links */
+        nav a {
+            color: #444;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+        
+        /* Styling the main content */
+        section {
+            padding: 1rem;
+        }
+        
+        /* Styling unordered list items */
+        ul li {
+            list-style-type: square;
+            margin-left: 1rem;
+        }
+        
+        /* Styling the footer */
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        /* Advanced CSS properties */
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        
+        section p {
+            line-height: 1.6;
+        }
+        
+        ul {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+        }
+        
+        footer p {
+            font-size: 0.8rem;
+        }
+        
+        /* CSS3 and Layout Techniques Specific Styles */
+        .box {
+            width: 200px;
+            height: 150px;
+            background-color: #f9c74f;
+            border: 2px solid #f77f00;
+            margin: 20px;
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            box-shadow: 3px 3px 5px #888888;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+        
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>CSS3 Essentials & Layout Techniques</h1>
+        <p>Exploring CSS3 Features and Layout Strategies</p>
+    </header>
+    
+    <!-- Navigation section -->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">CSS3 Features</a> |
+        <a href="#">Layout Techniques</a> |
+        <a href="#">Examples</a>
+    </nav>
+    
+    <!-- Main content section -->
+    <section>
+        <h2>CSS3 Essentials</h2>
+        <p>CSS3 brings powerful features like rounded corners, shadows, gradients, and more to enhance the styling of web elements.</p>
+        
+        <h3>Rounded Corners</h3>
+        <div class="box">Rounded Corners</div>
+        
+        <h3>Box Shadow</h3>
+        <div class="box" style="box-shadow: 5px 5px 10px #888888;">Box Shadow</div>
+        
+        <h3>Gradients</h3>
+        <div class="box" style="background: linear-gradient(to bottom, #f9c74f, #f77f00);">Gradient Box</div>
+    </section>
+    
+    <!-- Layout Techniques section -->
+    <section>
+        <h2>Layout Techniques</h2>
+        <p>Layout techniques like Grid and Flexbox offer powerful ways to create responsive and flexible layouts.</p>
+        
+        <h3>Grid Layout</h3>
+        <div class="grid-container">
+            <div class="box">Item 1</div>
+            <div class="box">Item 2</div>
+            <div class="box">Item 3</div>
+        </div>
+        
+        <h3>Flexbox Layout</h3>
+        <div class="flex-container">
+            <div class="box">Item 1</div>
+            <div class="box">Item 2</div>
+            <div class="box">Item 3</div>
+        </div>
+    </section>
+    
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2023 CSS3 Essentials & Layout Techniques. All rights reserved.</p>
+    </footer>
+</body>
+</html>
