@@ -1,0 +1,44 @@
+Create a database in MySQL and create an employee table and perform CURD operations
+Creating Database
+Create a Database:You can create a new database using the following SQL command:
+CREATE DATABASE new_db;
+Use the Database: After creating the database, you need to use it to perform operations within it:
+USE new_db;
+Create Tables and Start Programming: Now that you have the database set up, you can create tables and start programming with SQL queries. 
+
+1.	 Create an employee table and insert values
+
+
+CREATE TABLE employee (
+emp_id INT PRIMARY KEY,
+emp_name VARCHAR(50),
+job_name VARCHAR(50),
+manager_id INT,
+hire_date DATE,
+salary DECIMAL(10, 2),
+commission DECIMAL(10, 2),
+dep_id INT
+);
+
+INSERT INTO employee (emp_id, emp_name, job_name, manager_id, hire_date, salary, commission, dep_id)
+VALUES
+(1, 'John Doe', 'Manager', NULL, '2020-01-15', 5000.00, NULL, 1),
+(2, 'Jane Smith', 'Developer', 1, '2021-05-10', 4000.00, 500.00, 1),
+(3, 'Michael Johnson', 'Analyst', 1, '2019-11-30', 3500.00, NULL, 2),
+(4, 'Emily Brown', 'Designer', 2, '2022-02-20', 4200.00, 200.00, 2);
+
+select * from employee;
+
+2. SQL query to find employees who joined before 2020 and return their complete information: Assuming you have a hire_date column in the format 'YYYY-MM-DD', you can use the following SQL query to find employees who joined before 2020:
+SELECT * FROM employee WHERE hire_date < '2020-01-01';
+
+
+3. Update the salary of a particular employee
+UPDATE employee SET salary = 6000.00 WHERE emp_id = 3;
+select * from employee;
+
+
+4. Delete the details of particular employee
+DELETE FROM employee WHERE emp_id = 4;
+select * from employee;
+
