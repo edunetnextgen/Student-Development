@@ -1,0 +1,16 @@
+Program to demonstrate the Person class has a constructor (__init__) that initializes the name and age attributes. It also should contain an introduce method to introduce the person.
+Program
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        return f"Hi, I'm {self.name} and I'm {self.age} years old."
+
+# Create instances of Person
+person1 = Person("Alice", 25)
+person2 = Person("Bob", 30)
+
+print(person1.introduce())
+print(person2.introduce())
