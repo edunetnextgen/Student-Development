@@ -1,0 +1,5 @@
+Ex. 2: Design a basic HTML page layout for a blog post. Create a structure that includes the following elements:
+	A header section with the blog post title.
+	A navigation bar with links for "Home," "About," "Blog," and "Contact."
+	A main content area with the blog post content, including a title, author's name, publication date, and text.
+	A sidebar on the right side with a list of recent posts.
