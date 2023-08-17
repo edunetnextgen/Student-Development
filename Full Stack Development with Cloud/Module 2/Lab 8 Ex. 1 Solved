@@ -1,0 +1,32 @@
+Design a simple HTML page with the provided JavaScript code. Which include Console Logging, Alert Dialog Box, Prompt Dialog Box, Confirm Dialog Box.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Console & Dialog Box Example</title>
+</head>
+<body>
+    <script>
+        // Log a message to the browser console
+        console.log("Hello from the console!");
+
+        // Display an alert dialog box
+        alert("This is an alert dialog box.");
+
+        // Ask for user input using a prompt dialog box
+        var userInput = prompt("Please enter your name:");
+        if (userInput) {
+            alert("Hello, " + userInput + "!");
+        } else {
+            alert("You didn't enter a name.");
+        }
+
+        // Confirm user action using a confirm dialog box
+        var userConfirm = confirm("Do you want to proceed?");
+        if (userConfirm) {
+            alert("You clicked OK!");
+        } else {
+            alert("You clicked Cancel.");
+        }
+    </script>
+</body>
+</html>
