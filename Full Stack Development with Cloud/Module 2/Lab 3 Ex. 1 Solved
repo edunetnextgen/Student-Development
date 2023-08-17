@@ -1,0 +1,49 @@
+Ex. 1: Developing a personal blog website using HTML5. Your blog will cover various details. You want to ensure that your website is well-structured, accessible, and visually appealing. Provide the HTML code for creating the main structure of a blog post, incorporating semantic elements, headings, images, and links.
+
+HTML code:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Post</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Technology</a></li>
+                <li><a href="#">Food</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <header>
+                <h2>Exploring a Remote Island Paradise</h2>
+                <p>Published on <time datetime="2023-08-07">August 7, 2023</time> by <a href="#">Josh Mathew</a></p>
+            </header>
+            <img src="island.jpg" alt="Beautiful remote island" width="800" height="400">
+            <p>Imagine a place where white sandy beaches meet crystal-clear turquoise waters...</p>
+            <p>Whether you're an adventure seeker or simply looking to unwind, this remote island paradise...</p>
+            <section>
+                <h3>Getting There</h3>
+                <p>To reach this hidden gem, you'll need to take a small boat...</p>
+            </section>
+            <section>
+                <h3>Activities</h3>
+                <p>From snorkeling in vibrant coral reefs to hiking through lush rainforests...</p>
+            </section>
+            <footer>
+                <p>Tags: <a href="#">Travel</a>, <a href="#">Adventure</a>, <a href="#">Island</a></p>
+            </footer>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Blog. </p>
+    </footer>
+</body>
+</html>
