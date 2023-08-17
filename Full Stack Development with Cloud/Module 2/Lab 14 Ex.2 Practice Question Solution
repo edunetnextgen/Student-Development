@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add List Item Example</title>
+</head>
+<body>
+  <h1>Add List Item Example</h1>
+  <ul id="list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <button id="addItemButton">Add Item</button>
+
+  <script>
+    // Single JavaScript code snippet goes here
+  </script>
+</body>
+</html>
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const addItemButton = document.getElementById("addItemButton");
+  const list = document.getElementById("list");
+  
+  addItemButton.addEventListener("click", function() {
+    const newItem = document.createElement("li");
+    newItem.textContent = "New Item";
+    list.appendChild(newItem);
+  });
+});
