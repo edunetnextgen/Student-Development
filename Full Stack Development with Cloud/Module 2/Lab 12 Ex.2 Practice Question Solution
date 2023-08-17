@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Interactivity</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #toggleDiv {
+    display: none;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  .thumbnail {
+    width: 100px;
+    transition: transform 0.3s;
+  }
+  .thumbnail:hover {
+    transform: scale(1.2);
+  }
+  .expandable {
+    overflow: hidden;
+    height: 50px;
+    transition: height 0.3s;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <h1>jQuery Interactivity</h1>
+
+  <button id="toggleButton">Toggle Text</button>
+  <div id="toggleDiv">
+    <p>This is some text that can be toggled.</p>
+  </div>
+
+  <img class="thumbnail" src="thumbnail.jpg" alt="Thumbnail Image">
+
+  <div class="expandable">
+    <p>Click me to expand and collapse!</p>
+    <p>Additional content here...</p>
+    <p>More content...</p>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      // Toggle Display with Fade Effect
+      $("#toggleButton").click(function() {
+        $("#toggleDiv").fadeToggle("slow");
+      });
+
+      // Hover Effect
+      $(".thumbnail").hover(function() {
+        $(this).css("transform", "scale(1.2)");
+      }, function() {
+        $(this).css("transform", "scale(1)");
+      });
+
+      // Click Event with Animation
+      $(".expandable").click(function() {
+        $(this).toggleClass("expanded");
+      });
+    });
+  </script>
+</body>
+</html>
