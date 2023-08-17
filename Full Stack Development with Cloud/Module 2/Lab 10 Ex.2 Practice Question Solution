@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Page Example</title>
+<script>
+  function checkSeniorCitizen() {
+    const age = parseInt(prompt("Enter your age:"));
+    
+    if (age >= 60) {
+      alert("You are a senior citizen!");
+    } else {
+      alert("You are not a senior citizen.");
+    }
+  }
+
+  function iterateAndCalculateSum() {
+    let sum = 0;
+    for (let i = 1; i <= 5; i++) {
+      sum += i;
+      console.log(i);
+    }
+    console.log("Sum:", sum);
+  }
+
+  function determineDayOfWeek() {
+    const dayNumber = parseInt(prompt("Enter a number between 1 and 7:"));
+    let dayName;
+
+    switch (dayNumber) {
+      case 1:
+        dayName = "Sunday";
+        break;
+      case 2:
+        dayName = "Monday";
+        break;
+      case 3:
+        dayName = "Tuesday";
+        break;
+      case 4:
+        dayName = "Wednesday";
+        break;
+      case 5:
+        dayName = "Thursday";
+        break;
+      case 6:
+        dayName = "Friday";
+        break;
+      case 7:
+        dayName = "Saturday";
+        break;
+      default:
+        dayName = "Invalid input";
+    }
+
+    alert(`The day of the week is: ${dayName}`);
+  }
+</script>
+</head>
+<body>
+  <h1>Web Page Example</h1>
+  <button onclick="checkSeniorCitizen()">Check Senior Citizen</button>
+  <button onclick="iterateAndCalculateSum()">Iterate and Calculate Sum</button>
+  <button onclick="determineDayOfWeek()">Determine Day of the Week</button>
+</body>
+</html>
