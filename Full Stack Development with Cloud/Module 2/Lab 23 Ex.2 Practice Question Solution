@@ -1,0 +1,99 @@
+Step 1: Set Up the Project and App
+
+Create a Django project and an app within it. Open your terminal and run:
+
+django-admin startproject library_management
+cd library_management
+python manage.py startapp library
+
+
+Step 2: Define Models
+
+In your library app, define models for books and authors. Edit library/models.py:.
+
+from django.db import models
+
+class Author(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
+class Book(models.Model):
+    title = models.CharField(max_length=200)
+    author = models.ForeignKey(Author, on_delete=models.CASCADE)
+    publication_date = models.DateField()
+    isbn = models.CharField(max_length=13, unique=True)
+
+    def __str__(self):
+        return self.title
+
+
+Step 3: Create Admin Views
+
+Register the models with the Django admin interface by editing library/admin.py:
+
+from django.contrib import admin
+from .models import Author, Book
+
+admin.site.register(Author)
+admin.site.register(Book)
+
+
+Step 4: Create Views
+
+Create views to handle displaying the list of books and book details. Edit library/views.py:
+
+from django.shortcuts import render, get_object_or_404
+from .models import Book
+
+def book_list(request):
+    books = Book.objects.all()
+    return render(request, 'library/book_list.html', {'books': books})
+
+def book_detail(request, isbn):
+    book = get_object_or_404(Book, isbn=isbn)
+    return render(request, 'library/book_detail.html', {'book': book})
+
+
+Step 5: Create Templates
+
+Create templates for listing books and displaying book details. Create a templates directory inside your library app and add the following templates:
+
+library/templates/library/book_list.html:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library - Book List</title>
+</head>
+<body>
+    <h1>Book List</h1>
+    <ul>
+        {% for book in books %}
+        <li><a href="{% url 'book_detail' book.isbn %}">{{ book.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
+Step 6: Configure URLs
+
+Configure URLs to map views to URLs. Edit library/urls.py:
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('', views.book_list, name='book_list'),
+    path('<str:isbn>/', views.book_detail, name='book_detail'),
+]
+
+
+
+Step 7: Run the Server
+
+Run the development server using:
+
+python manage.py runserver
