@@ -1,0 +1,65 @@
+A JavaScript program that demonstrates the usage of events and animations. 
+	use JavaScript to detect a button click and display a message when the button is clicked. 
+	detect when a user hovers over a paragraph element and change its text content. 
+	example of an animated box that moves horizontally and reverses its direction using CSS keyframes and JavaScript.
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Events and Animations</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            position: relative;
+            animation: moveAnimation 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes moveAnimation {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Click Event</h2>
+        <button id="clickButton">Click Me</button>
+        <p id="clickOutput"></p>
+    </div>
+
+    <div>
+        <h2>Mouseover Event</h2>
+        <p id="mouseoverOutput">Hover over this text.</p>
+    </div>
+
+    <div>
+        <h2>Animation</h2>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        var clickButton = document.getElementById("clickButton");
+        var clickOutput = document.getElementById("clickOutput");
+
+        // Click Event
+        clickButton.addEventListener("click", function() {
+            clickOutput.textContent = "Button Clicked!";
+        });
+
+        var mouseoverOutput = document.getElementById("mouseoverOutput");
+
+        // Mouseover Event
+        mouseoverOutput.addEventListener("mouseover", function() {
+            mouseoverOutput.textContent = "Mouse over detected!";
+        });
+
+        // No need for JavaScript to control the animation, as it's handled by CSS
+    </script>
+</body>
+</html>
