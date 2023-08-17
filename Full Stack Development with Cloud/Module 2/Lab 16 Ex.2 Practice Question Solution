@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  .portfolio-container {
+    padding: 50px 0;
+  }
+  .portfolio-item {
+    padding: 20px;
+    text-align: center;
+  }
+  .portfolio-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .portfolio-caption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+  <div class="container-fluid portfolio-container">
+    <h1 class="text-center">Portfolio</h1>
+    <div class="row">
+      <div class="col-md-4 portfolio-item">
+        <img src="image1.jpg" alt="Project 1" class="portfolio-image">
+        <p class="portfolio-caption">Project 1</p>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <img src="image2.jpg" alt="Project 2" class="portfolio-image">
+        <p class="portfolio-caption">Project 2</p>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <img src="image3.jpg" alt="Project 3" class="portfolio-image">
+        <p class="portfolio-caption">Project 3</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
