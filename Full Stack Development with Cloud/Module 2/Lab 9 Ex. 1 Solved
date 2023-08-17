@@ -1,0 +1,92 @@
+A JavaScript program that demonstrates the usage of operators and functions.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operators & Functions in JavaScript</title>
+</head>
+<body>
+    <div>
+        <h2>Arithmetic Operators</h2>
+        <p id="arithmeticOutput"></p>
+    </div>
+
+    <div>
+        <h2>Comparison Operators</h2>
+        <p id="comparisonOutput"></p>
+    </div>
+
+    <div>
+        <h2>Logical Operators</h2>
+        <p id="logicalOutput"></p>
+    </div>
+
+    <div>
+        <h2>Functions</h2>
+        <p id="functionOutput"></p>
+    </div>
+
+    <script>
+        var arithmeticOutput = document.getElementById("arithmeticOutput");
+        var comparisonOutput = document.getElementById("comparisonOutput");
+        var logicalOutput = document.getElementById("logicalOutput");
+        var functionOutput = document.getElementById("functionOutput");
+
+        // Arithmetic operators
+        var num1 = 10;
+        var num2 = 5;
+        var sum = num1 + num2;
+        var difference = num1 - num2;
+        var product = num1 * num2;
+        var quotient = num1 / num2;
+
+        arithmeticOutput.textContent = "Sum: " + sum + "\n" +
+                                      "Difference: " + difference + "\n" +
+                                      "Product: " + product + "\n" +
+                                      "Quotient: " + quotient;
+
+        // Comparison operators
+        var isEqual = num1 === num2;
+        var isGreaterThan = num1 > num2;
+        var isLessThan = num1 < num2;
+
+        comparisonOutput.textContent = "Is equal: " + isEqual + "\n" +
+                                       "Is greater than: " + isGreaterThan + "\n" +
+                                       "Is less than: " + isLessThan;
+
+        // Logical operators
+        var isTrue = true;
+        var isFalse = false;
+
+        var andResult = isTrue && isFalse;
+        var orResult = isTrue || isFalse;
+        var notResult = !isTrue;
+
+        logicalOutput.textContent = "AND result: " + andResult + "\n" +
+                                    "OR result: " + orResult + "\n" +
+                                    "NOT result: " + notResult;
+
+        // Functions
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        var message = greet("Alice");
+        functionOutput.textContent = message;
+
+        function add(a, b) {
+            return a + b;
+        }
+
+        var sumResult = add(3, 7);
+        functionOutput.textContent += "\nSum: " + sumResult;
+
+        // Anonymous function
+        var multiply = function(x, y) {
+            return x * y;
+        }
+
+        var productResult = multiply(4, 6);
+        functionOutput.textContent += "\nProduct: " + productResult;
+    </script>
+</body>
+</html>
