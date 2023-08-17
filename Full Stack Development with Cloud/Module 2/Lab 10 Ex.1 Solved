@@ -1,0 +1,72 @@
+Creating a JavaScript program that showcases various control structures
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Control Structures in JavaScript</title>
+</head>
+<body>
+    <div>
+        <h2>If Statement</h2>
+        <p id="ifOutput"></p>
+    </div>
+
+    <div>
+        <h2>For Loop</h2>
+        <p id="forOutput"></p>
+    </div>
+
+    <div>
+        <h2>While Loop</h2>
+        <p id="whileOutput"></p>
+    </div>
+
+    <div>
+        <h2>Switch Statement</h2>
+        <p id="switchOutput"></p>
+    </div>
+
+    <script>
+        var ifOutput = document.getElementById("ifOutput");
+        var forOutput = document.getElementById("forOutput");
+        var whileOutput = document.getElementById("whileOutput");
+        var switchOutput = document.getElementById("switchOutput");
+
+        // If Statement
+        var age = 18;
+        if (age >= 18) {
+            ifOutput.textContent = "You are an adult.";
+        } else {
+            ifOutput.textContent = "You are a minor.";
+        }
+
+        // For Loop
+        var sum = 0;
+        for (var i = 1; i <= 5; i++) {
+            sum += i;
+        }
+        forOutput.textContent = "Sum using for loop: " + sum;
+
+        // While Loop
+        var product = 1;
+        var counter = 1;
+        while (counter <= 5) {
+            product *= counter;
+            counter++;
+        }
+        whileOutput.textContent = "Product using while loop: " + product;
+
+        // Switch Statement
+        var day = "Monday";
+        var dayType = "";
+        switch (day) {
+            case "Saturday":
+            case "Sunday":
+                dayType = "weekend";
+                break;
+            default:
+                dayType = "weekday";
+        }
+        switchOutput.textContent = "Today is a " + dayType + ".";
+    </script>
+</body>
+</html>
