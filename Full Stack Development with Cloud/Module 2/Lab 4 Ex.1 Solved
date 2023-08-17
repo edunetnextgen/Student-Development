@@ -1,0 +1,94 @@
+Ex. 1: A webpage that provides information about a training organization, including its services, courses, and contact details.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Training Organization - Edunet Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+	    background-color: #FFFFE0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem;
+        }
+        section {
+            padding: 1rem;
+        }
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Welcome to Edunet Foundation</h1>
+        <p>Your Path to Success Begins Here</p>
+    </header>
+    
+    <!-- Navigation section -->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">Courses</a> |
+        <a href="#">Services</a> |
+        <a href="#">Contact</a>
+    </nav>
+    
+    <!-- Main content section -->
+    <section>
+        <h2>About Us</h2>
+        <p>Edunet Foundation is a leading training organization that specializes in providing high-quality courses in various fields, including technology, softskill, and personal development.</p>
+    </section>
+    
+    <!-- Courses section -->
+    <section>
+        <h2>Our Courses</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Data Science</li>
+            <li>Artificial Intelligence</li>
+            <li>Cyber security</li>
+            <li>Leadership Skills</li>
+        </ul>
+    </section>
+    
+    <!-- Services section -->
+    <section>
+        <h2>Our Services</h2>
+        <p>We offer a range of services, including:</p>
+        <ul>
+            <li>Customized Corporate Training</li>
+            <li>Online Learning Platforms</li>
+            <li>Project Guidence</li>
+            <li>Workshops and Seminars</li>
+        </ul>
+    </section>
+    
+    <!-- Contact section -->
+    <section>
+        <h2>Contact Us</h2>
+        <p>If you have any questions or inquiries, please feel free to contact us:</p>
+        <p>Email: info@edunetfoundation.org</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+    
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2023 LearnTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
