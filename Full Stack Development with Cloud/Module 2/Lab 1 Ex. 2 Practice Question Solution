@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Testimonials</title>
+<style>
+  .testimonials {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  .testimonial {
+    width: 48%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  .testimonial img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+  <div class="testimonials">
+    <div class="testimonial">
+      <img src="customer1.jpg" alt="Customer 1">
+      <h3>John Doe</h3>
+      <p>"I had an amazing experience with this company. The service was top-notch and the staff was incredibly helpful."</p>
+    </div>
+    <div class="testimonial">
+      <img src="customer2.jpg" alt="Customer 2">
+      <h3>Jane Smith</h3>
+      <p>"I'm so impressed with the quality of their products. Definitely coming back for more. Highly recommended!"</p>
+    </div>
+  </div>
+</body>
+</html>
