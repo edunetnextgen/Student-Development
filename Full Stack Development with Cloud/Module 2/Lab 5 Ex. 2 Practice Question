@@ -1,0 +1,8 @@
+An HTML document containing a navigation menu. Task is to style the navigation menu using CSS properties to achieve the following:
+
+	Set the background color of the navigation menu
+	Display the menu items as horizontal inline elements.
+	Apply a padding to the menu items.
+	Change the text color of the menu items
+	Add a bottom border to the currently active menu item.
+
