@@ -1,0 +1,57 @@
+Design an HTML document that contains three sections, each demonstrating a different aspect of DOM manipulation and event handling using JavaScript. 
+1. "DOM Manipulation" section, there is a button and a paragraph. Button's event listener is there and it changes the text content of the paragraph when clicked.
+2. "Creating Elements" section, there should be a button and an unordered list. The event listener attached to the addButton creates a new list item and appends it to the itemList when clicked.
+3. Display the button effect by clicking the button.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Handling DOM using JavaScript</title>
+</head>
+<body>
+    <div>
+        <h2>DOM Manipulation</h2>
+        <button id="changeTextButton">Change Text</button>
+        <p id="outputText">Initial Text</p>
+    </div>
+
+    <div>
+        <h2>Creating Elements</h2>
+        <button id="addButton">Add Item</button>
+        <ul id="itemList"></ul>
+    </div>
+
+    <div>
+        <h2>Event Handling</h2>
+        <button id="eventButton">Click Me</button>
+        <p id="eventOutput"></p>
+    </div>
+
+    <script>
+        // DOM Manipulation
+        var changeTextButton = document.getElementById("changeTextButton");
+        var outputText = document.getElementById("outputText");
+
+        changeTextButton.addEventListener("click", function() {
+            outputText.textContent = "Text Changed!";
+        });
+
+        // Creating Elements
+        var addButton = document.getElementById("addButton");
+        var itemList = document.getElementById("itemList");
+
+        addButton.addEventListener("click", function() {
+            var li = document.createElement("li");
+            li.textContent = "New Item";
+            itemList.appendChild(li);
+        });
+
+        // Event Handling
+        var eventButton = document.getElementById("eventButton");
+        var eventOutput = document.getElementById("eventOutput");
+
+        eventButton.addEventListener("click", function() {
+            eventOutput.textContent = "Button Clicked!";
+        });
+    </script>
+</body>
+</html>
