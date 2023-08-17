@@ -1,0 +1,54 @@
+: To create an employee management system using Python and MySQL
+Step 1) Download and install MySQL8 
+https://dev.mysql.com/downloads/windows/installer/8.0.html 
+Step 2) Run MySQL workbench  
+Step 3) Open the command line terminal  
+  >cmd 
+Step 4) Install MySQL connector   
+>python -m pip install mysql-connector-python 
+Step 5) Test mysql connector 
+>import mysql.connector 
+Step 6) Create a .py file and write code and execute the respective .py file   from the command line 
+cmd  
+cd desktop  
+python filename.py  
+//Create Database
+import mysql.connector
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="Yogesh786@"
+)
+mycursor = mydb.cursor()
+mycursor.execute("CREATE DATABASE mydatabase")
+print(mydb)
+
+//Create table
+mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
+
+//Insert employees
+
+sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
+val = ("John", "Highway 21")
+mycursor.execute(sql, val)
+mydb.commit()
+print(mycursor.rowcount, "record inserted.")
+
+//Display employees
+mycursor.execute("SELECT * FROM customers")
+myresult = mycursor.fetchall()
+for x in myresult:
+  print(x)
+
+
+//Display name of employees
+mycursor.execute("SELECT name FROM customers")
+myresult = mycursor.fetchall()
+for x in myresult:
+  print(x)
+
+//Delete employees
+sql = "DELETE FROM customers WHERE address = 'Highway 21'"
+mycursor.execute(sql)
+mydb.commit()
+print(mycursor.rowcount, "record(s) deleted")
