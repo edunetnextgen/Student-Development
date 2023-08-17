@@ -1,0 +1,63 @@
+Build a web page using Bootstrap's container and card components to showcase product information. Apply custom CSS properties to style the cards with a unique background color, adjust the text color, and add padding to the content area. Additionally, ensure that the cards have a slight shadow to create a subtle visual effect.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Styled Cards with Bootstrap</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Include custom CSS styles -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        
+        .custom-card {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        h4 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <h4 class="card-title">Item 1</h4>
+                        <p class="card-text">High-quality and innovative.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <h4 class="card-title">Item 2</h4>
+                        <p class="card-text">Elegance and functionality combined.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card custom-card">
+                    <div class="card-body">
+                        <h4 class="card-title">Item 3</h4>
+                        <p class="card-text">The ultimate solution for your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
