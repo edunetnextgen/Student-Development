@@ -1,1 +1,1 @@
-Create a webpage for a restaurant that offers an online reservation system. Create a form that allows users to select a reservation date and time. Implement a date and time picker using Bootstrap's Datepicker and Timepicker
+Design a web page that uses Bootstrap to create a basic web page with a form and styling. Integrate Bootstrap into your HTML page by including the necessary CSS and JavaScript files.
