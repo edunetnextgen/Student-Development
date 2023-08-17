@@ -1,0 +1,11 @@
+To find the average of 3 numbers using function
+Program
+def calculate_average(num1, num2, num3):
+    return (num1 + num2 + num3) / 3
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+average = calculate_average(num1, num2, num3)
+print(f"The average of {num1}, {num2}, and {num3} is {average:.2f}.")
