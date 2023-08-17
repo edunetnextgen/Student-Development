@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Awesome Music Festival</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Lineup</a></li>
+                <li><a href="#">Schedule</a></li>
+                <li><a href="#">Tickets</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="lineup">
+            <h2>Lineup</h2>
+            <ul>
+                <li>Artist 1</li>
+                <li>Artist 2</li>
+                <li>Artist 3</li>
+                <!-- Add more artists here -->
+            </ul>
+        </section>
+        <section id="schedule">
+            <h2>Schedule</h2>
+            <table>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Performance</th>
+                </tr>
+                <tr>
+                    <td>Day 1</td>
+                    <td>5:30 PM</td>
+                    <td>Artist 1</td>
+                </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td>7:30 PM</td>
+                    <td>Artist 2</td>
+                </tr>
+                <!-- Add more schedule entries here -->
+            </table>
+        </section>
+        <section id="tickets">
+            <h2>Tickets</h2>
+            <p>Ticket prices:</p>
+            <ul>
+                <li>Single Day Pass: $50</li>
+                <li>Weekend Pass: $80</li>
+                <li>VIP Pass: $120</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Awesome Music Festival. </p>
+    </footer>
+</body>
+</html>
