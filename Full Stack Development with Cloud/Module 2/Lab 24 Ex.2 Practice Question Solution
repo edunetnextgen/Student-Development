@@ -1,0 +1,56 @@
+import mysql.connector
+
+# Database configuration
+db_config = {
+    'user': 'your_username',
+    'password': 'your_password',
+    'host': 'localhost',
+    'database': 'library_db',
+}
+
+# Create a connection to the database
+conn = mysql.connector.connect(**db_config)
+
+# Create a cursor
+cursor = conn.cursor()
+
+# CREATE - Insert a new book
+def create_book(title, author, publication_date, isbn):
+    query = "INSERT INTO books (title, author, publication_date, isbn) VALUES (%s, %s, %s, %s)"
+    values = (title, author, publication_date, isbn)
+    cursor.execute(query, values)
+    conn.commit()
+
+# READ - Get all books
+def get_all_books():
+    query = "SELECT * FROM books"
+    cursor.execute(query)
+    return cursor.fetchall()
+
+# UPDATE - Update a book's title by ISBN
+def update_book_title(isbn, new_title):
+    query = "UPDATE books SET title = %s WHERE isbn = %s"
+    values = (new_title, isbn)
+    cursor.execute(query, values)
+    conn.commit()
+
+# DELETE - Delete a book by ISBN
+def delete_book(isbn):
+    query = "DELETE FROM books WHERE isbn = %s"
+    values = (isbn,)
+    cursor.execute(query, values)
+    conn.commit()
+
+# Test the CRUD operations
+create_book("Sample Book", "John Doe", "2023-08-01", "1234567890")
+print("Books after creation:", get_all_books())
+
+update_book_title("1234567890", "Updated Book Title")
+print("Books after update:", get_all_books())
+
+delete_book("1234567890")
+print("Books after deletion:", get_all_books())
+
+# Close cursor and connection
+cursor.close()
+conn.close()
