@@ -1,0 +1,17 @@
+# Get the percentage score from the user
+percentage = float(input("Enter the percentage score: "))
+
+# Determine the grade based on the percentage
+if percentage >= 90:
+    grade = "A"
+elif percentage >= 80:
+    grade = "B"
+elif percentage >= 70:
+    grade = "C"
+elif percentage >= 60:
+    grade = "D"
+else:
+    grade = "F"
+
+# Display the grade
+print(f"Your grade is: {grade}")
