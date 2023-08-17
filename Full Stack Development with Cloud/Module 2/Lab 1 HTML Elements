@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example HTML Elements</title>
+</head>
+<body>
+    <!-- This is a heading element -->
+    <h1>Welcome to the training Web Page</h1>
+    
+    <!-- This is a paragraph element with a hyperlink -->
+    <p>This is a paragraph of text. Here's a <a href="https://www.example.com">link to Example.com</a>.</p>
+    
+    <!-- This is an unordered list element -->
+    <h2>List of Fruits</h2>
+    <ul>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Banana</li>
+    </ul>
+    
+    <!-- This is a form element for user input -->
+    <h2>Contact Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="your@example.com">
+        <br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message..."></textarea>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+    
+    <!-- This is a table element -->
+    <h2>Sample Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Arpitha</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>Shyam</td>
+            <td>30</td>
+        </tr>
+    </table>
+    
+    <!-- This is a division element with a class -->
+    <div class="note">
+        <p>This is a <strong>note</strong> section.</p>
+    </div>
+    
+    <!-- This is an HTML comment that won't be displayed in the browser -->
+</body>
+</html>
