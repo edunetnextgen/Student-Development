@@ -1,0 +1,5 @@
+Create an interactive webpage that demonstrates the usage of JavaScript events and animations. Design a simple HTML page with the following features and functionalities:
+
+	Click Event: Include a button element, When the button is clicked, a paragraph below it should display any message. Use JavaScript to detect the button click event and update the paragraph content accordingly.
+	Mouseover Event: Add a paragraph element. When a user hovers their mouse over this paragraph, the text content should change. Utilize JavaScript to detect the mouseover event and modify the paragraph content.
+	Animation: Create a visually appealing animation using CSS keyframes. Design a moving element (e.g., a div or an image) that smoothly moves horizontally across the screen and then reverses its direction. Use JavaScript to control the start and stop of the animation.
