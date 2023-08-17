@@ -1,0 +1,23 @@
+To create simple webpage to display a message
+
+Set up the environment for react app development
+
+Step1: install nodejs from https://nodejs.org/en/
+
+Step 2: Install VSCode or any other editor (https://code.visualstudio.com/download
+
+Step 3: Create a new folder
+Step 4: open command prompt and execute following command
+npx create-react-app my-app
+
+Then  change the current directory using the following commad
+cd my-app
+To open the code in VScode use the following command:
+code .
+Include the following code in App.js
+
+Include the following code in App.css
+
+Then enter the following command in the command prompt to view the website
+npm start
+
