@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Webpage</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #animationElement {
+    width: 50px;
+    height: 50px;
+    background-color: #ff9900;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    animation: moveAnimation 3s linear infinite;
+  }
+  @keyframes moveAnimation {
+    0%, 100% {
+      left: 0;
+    }
+    50% {
+      left: calc(100% - 50px);
+    }
+  }
+</style>
+</head>
+<body>
+  <h1>Interactive Webpage</h1>
+
+  <button id="clickButton">Click Me</button>
+  <p id="clickResult"></p>
+
+  <p id="mouseoverText">Hover over this paragraph.</p>
+
+  <div id="animationElement"></div>
+
+  <script>
+    // Click Event
+    const clickButton = document.getElementById("clickButton");
+    const clickResult = document.getElementById("clickResult");
+
+    clickButton.addEventListener("click", () => {
+      clickResult.textContent = "Button was clicked!";
+    });
+
+    // Mouseover Event
+    const mouseoverText = document.getElementById("mouseoverText");
+
+    mouseoverText.addEventListener("mouseover", () => {
+      mouseoverText.textContent = "You hovered over this paragraph!";
+    });
+    mouseoverText.addEventListener("mouseout", () => {
+      mouseoverText.textContent = "Hover over this paragraph.";
+    });
+
+    // Animation Control
+    const animationElement = document.getElementById("animationElement");
+    let isAnimating = true;
+
+    animationElement.addEventListener("click", () => {
+      if (isAnimating) {
+        animationElement.style.animationPlayState = "paused";
+      } else {
+        animationElement.style.animationPlayState = "running";
+      }
+      isAnimating = !isAnimating;
+    });
+  </script>
+</body>
+</html>
