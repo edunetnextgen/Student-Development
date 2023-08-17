@@ -1,0 +1,39 @@
+Create a simple HTML page that demonstrates the usage of jQuery events and effects. Include three square div elements with the class "box." When a user clicks on a box, it should disappear with a fade-out effect. Utilize jQuery to select the elements, handle the click event, and apply the fade effect.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Event & Effect Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Styling for the boxes */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3400db;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>jQuery Event & Effect Example</h2>
+        <p>Click on a box to hide it with a fade effect.</p>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Select all elements with the class "box" using jQuery
+            var boxes = $(".box");
+
+            // Add a click event handler with a fade-out effect
+            boxes.click(function() {
+                $(this).fadeOut();
+            });
+        });
+    </script>
+</body>
+</html>
