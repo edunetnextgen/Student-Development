@@ -1,0 +1,20 @@
+# Getting user input
+temperature_input = input("Enter the temperature value along with its unit (C or F): ")
+temperature_unit = temperature_input[-1]  # Extract the last character
+
+# Extracting the temperature value as a float
+temperature_value = float(temperature_input[:-1])
+
+# Temperature conversion
+if temperature_unit == "C":
+    converted_temperature = (temperature_value * 9/5) + 32
+    converted_unit = "Fahrenheit"
+elif temperature_unit == "F":
+    converted_temperature = (temperature_value - 32) * 5/9
+    converted_unit = "Celsius"
+else:
+    print("Invalid unit. Please enter 'C' for Celsius or 'F' for Fahrenheit.")
+    exit()
+
+# Displaying the converted temperature
+print(f"The converted temperature is {converted_temperature:.2f} {converted_unit}.")
