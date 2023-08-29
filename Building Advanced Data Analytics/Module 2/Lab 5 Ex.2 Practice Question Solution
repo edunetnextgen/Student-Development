@@ -1,0 +1,21 @@
+import pandas as pd
+
+# Given monthly sales data for a store
+sales_data = [5000, 6000, 7500, 4000, 8000, 9000, 6500, 7000, 5500, 8500]
+
+# Create a Pandas Series from the sales data
+sales_series = pd.Series(sales_data)
+
+# Calculate the total and average sales
+total_sales = sales_series.sum()
+average_sales = sales_series.mean()
+
+# Calculate the number of months with sales above the average
+above_average_count = sales_series[sales_series > average_sales].count()
+
+# Display the results
+print("Monthly Sales Data:")
+print(sales_series)
+print("Total Sales:", total_sales)
+print("Average Sales:", average_sales)
+print("Number of Months with Sales Above Average:", above_average_count)
