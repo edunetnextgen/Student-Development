@@ -1,0 +1,14 @@
+Objective: 
+To Find Year from a Date as Four Digit number
+Syntax:
+Year (Date)
+Problem Statement:
+In Sample Super Store Data set “Order Date” date data type column is there. To extract year part from the dates Year DAX function is used. To achieve this a new column will be created. 
+Solution:
+1.	Import Sample Super Store Data into Power BI Desktop as shown in Task1.
+2.	Clean and Transform the data in Power Query editor. Load the data back to Power BI Desktop.
+3.	Understand the Data or Understand the business.
+4.	Click on Modeling tab  Click on New Column from Calculations group then a New Column will be created.
+5.	Write the name of the new column and write the year dax function to extract the year part from order date column values.
+6.	Year1 column is created with all years extracted from order date column as follows. 
+
