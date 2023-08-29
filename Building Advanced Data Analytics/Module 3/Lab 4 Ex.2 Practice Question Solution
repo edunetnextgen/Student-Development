@@ -1,0 +1,37 @@
+Import Employee Data Set:
+Open Power BI Desktop and click on the "Home" tab in the top menu. Select "Get Data" and choose the appropriate source to import the Employee data set. Follow the steps to load the data into Power BI.
+
+Open Power Query Editor (PQE):
+Once the data is loaded, you'll be able to see the data preview. Click on the "Edit Queries" button to open Power Query Editor.
+
+Add Deductions Column:
+To create a new "deductions" column:
+
+Select the "Add Column" tab in Power Query Editor.
+Choose "Custom Column" to create a new column with custom logic.
+Enter a name for the column (e.g., "Deductions").
+In the formula section, enter the following formula to extract the first three characters of the "Salary" column:
+Click "OK" to add the new column with the first three characters of the salary.
+Calculate Net Salary:
+To calculate the net salary:
+
+Select the "Add Column" tab again.
+Choose "Custom Column" to create another new column.
+Enter a name for the column (e.g., "Net Salary").
+In the formula section, enter the following formula to subtract the "Deductions" column from the "Salary" column:
+
+Apply Changes:
+Once you've added the "Deductions" and "Net Salary" columns, click the "Close & Apply" button in the upper-left corner of Power Query Editor. This will apply the changes to the loaded data.
+
+Back to Report View:
+You'll be returned to the Power BI report view. The new columns you added in Power Query Editor will be available in your dataset.
+
+Data Model and Visualizations:
+You can now use the "Deductions" and "Net Salary" columns in your data model and create visualizations in the report view.
+
+Save Your Work:
+Remember to save your Power BI project to keep the changes and your progress.
+
+Publish and Share:
+If you're working collaboratively or want to share insights, you can publish your Power BI report to the Power BI service.
+
