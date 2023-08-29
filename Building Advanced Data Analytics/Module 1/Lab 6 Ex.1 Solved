@@ -1,0 +1,20 @@
+Write a Python program that asks the user for a positive integer n. Use a for loop to generate and print the first n numbers in the Fibonacci sequence. 
+The Fibonacci sequence starts with 0 and 1, and each subsequent number is the sum of the two preceding ones
+
+----------------------------------------------------------------
+
+# Getting user input
+n = int(input("Enter a positive integer n: "))
+
+# Initializing Fibonacci sequence with first two numbers
+fib_sequence = [0, 1]
+
+# Generating Fibonacci sequence using a for loop
+for i in range(2, n):
+    next_fib = fib_sequence[-1] + fib_sequence[-2]
+    fib_sequence.append(next_fib)
+
+# Displaying the generated Fibonacci sequence
+print(f"The first {n} numbers in the Fibonacci sequence are:")
+for num in fib_sequence:
+    print(num, end=" ")
