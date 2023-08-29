@@ -1,0 +1,12 @@
+Question3: Working with Data Types of the columns
+
+Objective: Change the Data type of the columns which are not opt
+
+Problem Statement:Import the Employee Data into Power BI. In PQE verify all the column data types and change the data type of the column which is not correctly kept.
+Solution:
+1.	Import the Employee Excel Data source into Power BI.
+2.	Click on the Home tab  Transform  Transform Option.
+3.	Then the Data will be loaded into Power Query editor.
+4.	Click on the Transform tab. Check for the data types of each column by clicking on the column name.
+5.	Change the data type of the column which is not opt for the column as follows.
+6.	Change the data type of Salary Column: Right click on the name of the column  Change type  Select Whole Number data type. Observe the changes happening in the column. All the values will be rounded to the nearest integer values.
