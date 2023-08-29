@@ -1,0 +1,22 @@
+You have the test scores of a group of students. Create a histogram to visualize the distribution of test scores with custom binning.
+---------------------------------------
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Test scores data
+scores = np.array([75, 88, 92, 65, 78, 82, 60, 90, 85, 70, 95, 68, 73, 87, 79, 91, 83])
+
+# Custom bin edges for the histogram
+bin_edges = [60, 70, 80, 90, 100]
+
+# Create a histogram with custom binning
+plt.hist(scores, bins=bin_edges, edgecolor='black', alpha=0.7)
+
+# Add labels and title
+plt.xlabel('Test Scores')
+plt.ylabel('Frequency')
+plt.title('Test Score Distribution')
+
+# Show the plot
+plt.show()
