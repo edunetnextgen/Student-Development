@@ -1,0 +1,8 @@
+# Get input from the user
+input_sentence = input("Enter a sentence: ")
+
+# Capitalize the first letter of each word
+capitalized_sentence = input_sentence.title()
+
+# Print the capitalized sentence
+print("Capitalized sentence:", capitalized_sentence)
