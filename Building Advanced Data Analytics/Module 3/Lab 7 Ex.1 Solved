@@ -1,0 +1,11 @@
+Objective: 
+Visualize Sales Analysis using a Dashboard
+Problem Statement:
+Import Sample super store data set into Power BI. Find Comprehensive Sales Analysis using a Dashboard.
+Solution:
+1.	Import Sample Super Store Data into Power BI Desktop as shown in Task1.
+2.	Clean and Transform the data in Power Query editor. Load the data back to Power BI Desktop.
+3.	Understand the Data or Understand the business
+4.	Categorize all the columns into three buckets (Categorical Columns, Numerical Columns, Date Columns).
+5.	Prepare a Problem statements in view of comprehensive Sales Analysis. ( Ex: Regions Wise Sales, Time Series Sales, Sales by Category and Sub category etc.)
+6.	Place all the Reports in one or two report page(s) and add a Slicer to from a Dashboard. Now the Dashboard will be as follows.
