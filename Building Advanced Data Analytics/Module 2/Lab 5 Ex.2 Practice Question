@@ -1,0 +1,1 @@
+Given the monthly sales data for a store, create a Pandas Series representing the sales and calculate the total sales, average sales, and the number of months with sales above the average.
