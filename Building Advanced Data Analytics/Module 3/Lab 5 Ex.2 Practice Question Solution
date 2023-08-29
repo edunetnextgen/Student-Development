@@ -1,0 +1,28 @@
+Import Sample Super Store Data Set:
+Open Power BI Desktop and click on the "Home" tab in the top menu. Select "Get Data" and choose the appropriate source to import the Sample Super Store data. Follow the steps to load the data into Power BI.
+
+Create a Pie Chart Visualization:
+
+Go to the "Visualizations" pane on the right side of the screen.
+Click on the "Pie chart" icon to create a new Pie chart visualization.
+Configure the Pie Chart:
+
+Drag the "Segment" column from the "Fields" pane to the "Values" field well of the Pie chart visualization. This will set up the segments for your Pie chart.
+Apply Data Aggregation:
+
+By default, the Pie chart will display the count of occurrences for each segment. If you want to visualize sales, you need to aggregate the sales values for each segment. You can do this by dragging the "Sales" column to the "Values" field well as well.
+Review the Pie Chart:
+
+You should now see the Pie chart displaying the sales for each segment. Each segment will have a slice proportional to its sales value.
+Customize the Chart (Optional):
+
+You can further customize the appearance of the chart using the "Format" options available in the "Visualizations" pane. You can change colors, labels, and other display settings.
+Data Model and Visualizations:
+
+In addition to the Pie chart, you can also use other visualizations to analyze your data and gain insights.
+Save Your Work:
+
+Remember to save your Power BI project to keep your visualizations and progress.
+Publish and Share:
+
+If you're working collaboratively or want to share insights, you can publish your Power BI report to the Power BI service.
