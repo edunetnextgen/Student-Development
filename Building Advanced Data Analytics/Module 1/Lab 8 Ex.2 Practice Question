@@ -1,0 +1,1 @@
+Write a Python program that prompts the user to enter a positive integer. Implement a loop that determines whether the entered number is a prime number or not. To do this, check if the number is divisible by any integer from 2 to the square root of the number. If the number is found to be divisible by any of these integers, it is not a prime number.
