@@ -1,0 +1,22 @@
+import math
+
+# Getting user input
+number = int(input("Enter a positive integer: "))
+
+# Validating input
+if number <= 0:
+    print("Please enter a positive integer.")
+else:
+    is_prime = True
+
+    # Checking for prime using a loop
+    for i in range(2, int(math.sqrt(number)) + 1):
+        if number % i == 0:
+            is_prime = False
+            break
+
+    # Displaying the result
+    if is_prime:
+        print(f"{number} is a prime number.")
+    else:
+        print(f"{number} is not a prime number.")
