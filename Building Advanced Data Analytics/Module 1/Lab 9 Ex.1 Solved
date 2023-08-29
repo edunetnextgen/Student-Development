@@ -1,0 +1,22 @@
+simple Python program that demonstrates the use of functions:
+
+----------------------------------------
+
+# Define a function to calculate the square of a number
+def calculate_square(number):
+    square = number ** 2
+    return square
+
+# Define a function to greet a person
+def greet(name):
+    print(f"Hello, {name}!")
+
+# Main program
+if __name__ == "__main__":
+    # Calling the functions
+    num = float(input("Enter a number: "))
+    result = calculate_square(num)
+    print(f"The square of {num} is {result}")
+    
+    person_name = input("Enter your name: ")
+    greet(person_name)
