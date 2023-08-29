@@ -1,0 +1,1 @@
+Write a Python program that asks the user for a range of numbers (start and end). Use a loop to iterate through the numbers in the range. Print all odd numbers within the range, skipping even numbers using the continue keyword.
