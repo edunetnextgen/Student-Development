@@ -1,0 +1,32 @@
+A school cafeteria serves lunch to students, and the menu changes daily. Write a Python program that simulates a student's lunch selection process. The program should prompt the user to enter the number of items they want from the menu. The menu items are numbered from 1 to 5. However, if the user enters 0, the program should stop the selection process using the break keyword.
+--------------------------------------------
+
+# Initialize an empty list to store selected items
+selected_items = []
+
+# Display the menu
+print("Menu:")
+print("1. Item A")
+print("2. Item B")
+print("3. Item C")
+print("4. Item D")
+print("5. Item E")
+
+# Loop for lunch selection
+while True:
+    selection = int(input("Enter the number of the item you want (enter 0 to stop): "))
+    
+    if selection == 0:
+        break  # Exit the loop if 0 is entered
+    elif 1 <= selection <= 5:
+        selected_items.append(selection)  # Add selected item to the list
+    else:
+        print("Invalid selection. Please choose a valid item number.")
+
+# Display the selected items
+if selected_items:
+    print("Selected items:")
+    for item in selected_items:
+        print(f"Item {item}")
+else:
+    print("No items selected.")
