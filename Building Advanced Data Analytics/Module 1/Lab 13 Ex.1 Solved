@@ -1,0 +1,14 @@
+Write a Python program that takes a list of integers as input and creates a new list with only the even numbers from the input list.
+-------------------------------------
+
+# Get input from the user (list of integers separated by spaces)
+input_numbers = input("Enter a list of integers separated by spaces: ").split()
+
+# Convert the input to a list of integers
+number_list = list(map(int, input_numbers))
+
+# Create a new list with only even numbers
+even_numbers = [num for num in number_list if num % 2 == 0]
+
+# Print the list of even numbers
+print("Even numbers:", even_numbers)
