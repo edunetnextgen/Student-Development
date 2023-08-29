@@ -1,0 +1,15 @@
+Objective: 
+Add all the numbers in a Numerical column.
+Syntax:
+SUM(Column Name)
+Problem Statement:
+In Sample Super Store Data set Sales numerical column is there. To calculate total sales in the data set SUM DAX function is used. To display this sum value Card Visual will be used. 
+
+Solution:
+1.	Import Sample Super Store Data into Power BI Desktop as shown in Task1.
+2.	Clean and Transform the data in Power Query editor. Load the data back to Power BI Desktop.
+3.	Understand the Data or Understand the business.
+4.	Click on Home tab  Click on New Measure then a New Measure will be created. 
+5.	Write the Sum DAX function as follows and hit Enter. A new Measure will be created to calculate total sales.
+6.	Click on Report View  Click on Card Visual from Visualization pane  the format of Card Visual will be created in the Report view canvas as follows.
+7.	Drag total sales measure to the fields parameter of the card visual. Now total sales can be seen as follows.
