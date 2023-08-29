@@ -1,0 +1,46 @@
+class Product:
+    def __init__(self, name, price, description):
+        self.name = name
+        self.price = price
+        self.description = description
+
+class Catalog:
+    def __init__(self):
+        self.products = []
+
+    def add_product(self, product):
+        self.products.append(product)
+
+    def display_catalog(self):
+        print("Product Catalog:")
+        for index, product in enumerate(self.products, start=1):
+            print(f"{index}. Name: {product.name}, Price: ${product.price:.2f}, Description: {product.description}")
+
+def main():
+    catalog = Catalog()
+
+    while True:
+        print("\nSelect an option:")
+        print("1. Add Product")
+        print("2. Display Catalog")
+        print("3. Quit")
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            name = input("Enter product name: ")
+            price = float(input("Enter product price: "))
+            description = input("Enter product description: ")
+
+            product = Product(name, price, description)
+            catalog.add_product(product)
+            print("Product added to catalog.")
+        elif choice == '2':
+            catalog.display_catalog()
+        elif choice == '3':
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please enter a valid option.")
+
+if __name__ == "__main__":
+    main()
