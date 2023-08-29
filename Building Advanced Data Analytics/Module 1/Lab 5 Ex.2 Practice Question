@@ -1,0 +1,1 @@
+Create a Python program that generates a random number between 1 and 100. The user should repeatedly guess the number. Use a while loop to provide hints (higher or lower) and continue until the user guesses the correct number.
