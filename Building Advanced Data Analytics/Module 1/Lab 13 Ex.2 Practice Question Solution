@@ -1,0 +1,8 @@
+# Get input from the user (list of elements separated by spaces)
+input_elements = input("Enter a list of elements separated by spaces: ").split()
+
+# Create a new list with duplicates removed
+unique_elements = list(set(input_elements))
+
+# Print the list with duplicates removed
+print("List with duplicates removed:", unique_elements)
