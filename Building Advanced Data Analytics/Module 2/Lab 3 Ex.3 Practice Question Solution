@@ -1,0 +1,13 @@
+import numpy as np
+
+# Given array of numbers
+data_array = np.array([10, 15, 20, 25, 30])
+
+# Calculate the standard deviation and variance using NumPy functions
+std_deviation = np.std(data_array)
+variance = np.var(data_array)
+
+# Display the results
+print("Data Array:", data_array)
+print("Standard Deviation:", std_deviation)
+print("Variance:", variance)
