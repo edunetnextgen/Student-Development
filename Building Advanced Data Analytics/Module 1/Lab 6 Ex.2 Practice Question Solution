@@ -1,0 +1,19 @@
+# Getting user input
+num = int(input("Enter a positive integer: "))
+
+# Validating input
+if num < 0:
+    print("Please enter a positive integer.")
+else:
+    # Converting the number to a string to iterate over its digits
+    num_str = str(num)
+    
+    # Initializing variable to store the sum of digits
+    sum_of_digits = 0
+    
+    # Calculating the sum of digits using a for loop
+    for digit in num_str:
+        sum_of_digits += int(digit)
+    
+    # Displaying the sum of digits
+    print(f"The sum of the digits of {num} is {sum_of_digits}")
