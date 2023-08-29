@@ -1,0 +1,22 @@
+Given the monthly expenses of a person on different categories (e.g., food, transportation, entertainment), create a bar chart to visualize the expenses. 
+
+------------------------------------
+
+import matplotlib.pyplot as plt
+
+# Categories of expenses
+categories = ['Food', 'Transportation', 'Entertainment', 'Utilities', 'Rent']
+
+# Monthly expenses for each category
+expenses = [500, 150, 100, 200, 800]
+
+# Create a bar chart
+plt.bar(categories, expenses, color='blue')
+
+# Add labels and title
+plt.xlabel('Expense Categories')
+plt.ylabel('Monthly Expenses ($)')
+plt.title('Monthly Expenses by Category')
+
+# Show the plot
+plt.show()
