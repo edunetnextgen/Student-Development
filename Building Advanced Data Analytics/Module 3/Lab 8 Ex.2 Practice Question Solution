@@ -1,0 +1,35 @@
+mport Data Sets:
+
+Import the Products, Sales, and Stores CSV datasets into Power BI using the "Get Data" option.
+Ensure that each dataset is properly loaded as a table.
+Understand the Data Sets:
+
+Review the structure and content of each dataset to understand the columns and their meanings.
+Identify common columns that can be used to establish relationships between datasets (e.g., Product ID, Store ID).
+Create Relationships:
+
+Navigate to the "Model" view in Power BI to create relationships between the datasets.
+Drag and drop the common columns (e.g., Product ID, Store ID) from one table to another to create relationships.
+Establish relationships such as:
+Products table linked to Sales table via Product ID.
+Stores table linked to Sales table via Store ID.
+Check Relationship Cardinality and Cross-Filtering:
+
+Ensure that the relationship cardinality (one-to-one, one-to-many, many-to-one, many-to-many) is set correctly based on the data.
+Configure cross-filtering options to define how filtering in one table affects related tables.
+Create Measures:
+
+In the "Model" view, define calculated measures that involve columns from multiple tables. Use DAX expressions to create these measures.
+Examples: Total Sales, Average Profit, Total Sales by Store, etc.
+Design Visualizations:
+
+Switch to the "Report" view to create visualizations using the combined data model.
+Create charts, tables, and visuals that leverage the relationships and measures you defined.
+Dashboard Creation (Optional):
+
+If desired, create a dashboard to showcase key insights from your combined data model.
+Add visuals and interactivity to the dashboard to facilitate data exploration.
+Testing and Validation:
+
+Test the data model's functionality and ensure that measures and visuals provide accurate results.
+Validate that cross-filtering and slicing work as expected.
