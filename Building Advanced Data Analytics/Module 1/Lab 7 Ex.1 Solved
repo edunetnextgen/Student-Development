@@ -1,0 +1,31 @@
+A school teacher wants to calculate the average score of a student's quizzes. 
+Write a Python program that takes the quiz scores as input until the user enters a negative score. Use the continue keyword to skip any negative scores during the calculation of the average. 
+After all the scores are entered, calculate and display the average score of the quizzes.
+
+
+-----------------------------------------------------------------------
+
+
+# Initializing variables
+total_score = 0
+num_quizzes = 0
+
+# Loop to input quiz scores
+while True:
+    score = float(input("Enter the quiz score (negative score to exit): "))
+    
+    if score < 0:
+        break  # Exit the loop when a negative score is entered
+    elif score < 0 or score > 100:
+        print("Invalid score. Please enter a score between 0 and 100.")
+        continue  # Skip invalid scores and continue to the next iteration
+    
+    total_score += score
+    num_quizzes += 1
+
+# Calculating and displaying the average score
+if num_quizzes > 0:
+    average_score = total_score / num_quizzes
+    print(f"The average quiz score is {average_score:.2f}")
+else:
+    print("No quiz scores entered.")
