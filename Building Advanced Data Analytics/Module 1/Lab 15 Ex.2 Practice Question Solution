@@ -1,0 +1,35 @@
+def task_division():
+    try:
+        num1 = int(input("Enter the first number: "))
+        num2 = int(input("Enter the second number: "))
+        result = num1 / num2
+        print("Result:", result)
+    except ValueError:
+        print("Invalid input. Please enter valid numbers.")
+    except ZeroDivisionError:
+        print("Division by zero is not allowed.")
+
+def task_file_reading():
+    try:
+        file_name = input("Enter the file name: ")
+        with open(file_name, 'r') as file:
+            content = file.read()
+            print("File content:", content)
+    except FileNotFoundError:
+        print("File not found.")
+
+def main():
+    print("Select a task:")
+    print("1. Division")
+    print("2. File Reading")
+    choice = input("Enter your choice: ")
+
+    if choice == '1':
+        task_division()
+    elif choice == '2':
+        task_file_reading()
+    else:
+        print("Invalid choice.")
+
+if __name__ == "__main__":
+    main()
