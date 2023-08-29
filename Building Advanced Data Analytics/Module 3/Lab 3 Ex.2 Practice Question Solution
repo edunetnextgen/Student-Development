@@ -1,0 +1,26 @@
+# Getting user input
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Arithmetic operators
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
+
+# Displaying results
+print("\nArithmetic Operations:")
+print(f"{num1} + {num2} = {addition}")
+print(f"{num1} - {num2} = {subtraction}")
+print(f"{num1} * {num2} = {multiplication}")
+print(f"{num1} / {num2} = {division}")
+
+# Assignment operators
+result = 0
+result += addition
+result -= subtraction
+result *= multiplication
+result /= division
+
+# Displaying final result
+print("\nFinal Result using Assignment Operators:", result)
