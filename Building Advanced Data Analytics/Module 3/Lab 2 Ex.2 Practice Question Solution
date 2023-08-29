@@ -1,0 +1,40 @@
+# Integer and Addition
+num1 = 10
+num2 = 20
+sum_result = num1 + num2
+print("Sum:", sum_result)
+
+# Floating-point Division
+div_result = num2 / num1
+print("Division:", div_result)
+
+# String Concatenation
+name = "John"
+greeting = "Hello, " + name + "!"
+print(greeting)
+
+# Boolean and Comparison
+is_greater = num2 > num1
+print("Is num2 greater than num1?", is_greater)
+
+# Lists
+my_list = [1, 2, 3, 4, 5]
+print("List:", my_list)
+
+# Accessing List Elements
+print("Second element:", my_list[1])
+
+# Appending to a List
+my_list.append(6)
+print("Updated List:", my_list)
+
+# Tuple
+my_tuple = (10, 20, 30)
+print("Tuple:", my_tuple)
+
+# Dictionary
+my_dict = {"name": "Alice", "age": 25}
+print("Dictionary:", my_dict)
+
+# Accessing Dictionary Values
+print("Age:", my_dict["age"])
