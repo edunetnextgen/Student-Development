@@ -1,0 +1,2 @@
+
+Given a dataset containing information about students' exam scores, demographics, and study hours, perform EDA by calculating summary statistics (mean, median, standard deviation) for the scores and study hours. Visualize the distribution of scores and study hours using histograms. 
