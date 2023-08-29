@@ -1,0 +1,14 @@
+num1 = 10
+num2 = 5
+
+# Perform arithmetic operations using variables
+sum_result = num1 + num2
+difference_result = num1 - num2
+product_result = num1 * num2
+division_result = num1 / num2
+
+# Print the results
+print("Sum:", sum_result)
+print("Difference:", difference_result)
+print("Product:", product_result)
+print("Division:", division_result)
