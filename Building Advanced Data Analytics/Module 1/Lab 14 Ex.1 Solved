@@ -1,0 +1,11 @@
+Implement a program that takes an integer as input. Handle the ValueError by prompting the user until a valid integer is provided.
+----------------------------------------------
+
+while True:
+    try:
+        num = int(input("Enter an integer: "))
+        break  # Exit the loop if a valid integer is provided
+    except ValueError:
+        print("Invalid input. Please enter a valid integer.")
+
+print("You entered:", num)
