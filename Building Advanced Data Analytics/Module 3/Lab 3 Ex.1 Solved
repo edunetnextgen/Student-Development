@@ -1,0 +1,81 @@
+Python program that demonstrates the use of various operators:
+
+# Arithmetic operators
+num1 = 10
+num2 = 5
+
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
+modulo = num1 % num2
+exponentiation = num1 ** num2
+
+print("Arithmetic Operators:")
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
+print("Modulo:", modulo)
+print("Exponentiation:", exponentiation)
+
+# Comparison operators
+x = 7
+y = 3
+
+equal = x == y
+not_equal = x != y
+greater_than = x > y
+less_than = x < y
+greater_than_equal = x >= y
+less_than_equal = x <= y
+
+print("\nComparison Operators:")
+print("Equal:", equal)
+print("Not Equal:", not_equal)
+print("Greater Than:", greater_than)
+print("Less Than:", less_than)
+print("Greater Than or Equal:", greater_than_equal)
+print("Less Than or Equal:", less_than_equal)
+
+# Logical operators
+p = True
+q = False
+
+logical_and = p and q
+logical_or = p or q
+logical_not_p = not p
+logical_not_q = not q
+
+print("\nLogical Operators:")
+print("Logical AND:", logical_and)
+print("Logical OR:", logical_or)
+print("Logical NOT p:", logical_not_p)
+print("Logical NOT q:", logical_not_q)
+
+# Assignment operators
+a = 10
+b = 5
+
+a += b
+print("\nAssignment Operators:")
+print("a += b (a = a + b):", a)
+
+# Bitwise operators
+num3 = 10
+num4 = 6
+
+bitwise_and = num3 & num4
+bitwise_or = num3 | num4
+bitwise_xor = num3 ^ num4
+bitwise_not_num3 = ~num3
+left_shift = num3 << 2
+right_shift = num3 >> 1
+
+print("\nBitwise Operators:")
+print("Bitwise AND:", bitwise_and)
+print("Bitwise OR:", bitwise_or)
+print("Bitwise XOR:", bitwise_xor)
+print("Bitwise NOT num3:", bitwise_not_num3)
+print("Left Shift:", left_shift)
+print("Right Shift:", right_shift)
