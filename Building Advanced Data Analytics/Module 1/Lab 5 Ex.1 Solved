@@ -1,0 +1,24 @@
+Write a Python program that prompts the user to enter a positive integer. Use a while loop to calculate and display the factorial of that integer. 
+
+The factorial of a number n is the product of all positive integers from 1 to n.
+
+---------------------------------------------
+
+# Getting user input
+n = int(input("Enter a positive integer: "))
+
+# Validating input
+if n < 0:
+    print("Factorial is not defined for negative numbers.")
+else:
+    # Initializing variables
+    factorial = 1
+    i = 1
+
+    # Calculating factorial using a while loop
+    while i <= n:
+        factorial *= i
+        i += 1
+
+    # Displaying the factorial
+    print(f"The factorial of {n} is {factorial}")
