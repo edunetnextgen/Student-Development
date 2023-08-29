@@ -1,0 +1,13 @@
+Python program that demonstrates the use of variables:
+
+# Assign a value to a variable
+message = "Hello, World!"
+
+# Print the value of the variable
+print(message)
+
+# Update the variable's value
+message = "Python is amazing!"
+
+# Print the updated value
+print(message)
