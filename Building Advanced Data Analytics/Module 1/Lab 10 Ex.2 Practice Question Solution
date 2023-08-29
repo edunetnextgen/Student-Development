@@ -1,0 +1,14 @@
+# Lambda function to calculate the square of a number
+square = lambda x: x ** 2
+
+# Getting user input for the list of numbers
+num_list = input("Enter a list of numbers separated by spaces: ").split()
+
+# Converting the input to a list of integers
+num_list = list(map(int, num_list))
+
+# Calculating the squares using the lambda function
+squared_list = list(map(square, num_list))
+
+# Displaying the list of squared numbers
+print("Squared numbers:", squared_list)
