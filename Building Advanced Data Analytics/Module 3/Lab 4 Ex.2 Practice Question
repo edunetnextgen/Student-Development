@@ -1,0 +1,6 @@
+During a science fair, a student showcased an innovative temperature measurement device. The device provides readings in both Celsius and Fahrenheit. Write a Python program that prompts the user to enter a temperature value along with its unit ("C" for Celsius or "F" for Fahrenheit). Depending on the unit provided, the program should convert the temperature to the opposite unit and display the converted temperature.
+
+For conversion:
+
+To convert from Celsius to Fahrenheit: Multiply by 9/5 and add 32.
+To convert from Fahrenheit to Celsius: Subtract 32 and then multiply by 5/9.
