@@ -1,0 +1,31 @@
+Python program that demonstrates the use of lambda functions:
+
+# Lambda function to calculate the square of a number
+square = lambda x: x ** 2
+
+# Lambda function to add two numbers
+add = lambda a, b: a + b
+
+# Lambda function to check if a number is even
+is_even = lambda num: num % 2 == 0
+
+# Lambda function to reverse a string
+reverse_string = lambda s: s[::-1]
+
+# Main program
+if __name__ == "__main__":
+    num = float(input("Enter a number: "))
+    print(f"The square of {num} is {square(num)}")
+    
+    num1 = float(input("Enter the first number: "))
+    num2 = float(input("Enter the second number: "))
+    print(f"The sum of {num1} and {num2} is {add(num1, num2)}")
+    
+    check_num = int(input("Enter a number to check if it's even: "))
+    if is_even(check_num):
+        print(f"{check_num} is even.")
+    else:
+        print(f"{check_num} is odd.")
+    
+    input_string = input("Enter a string: ")
+    print(f"The reversed string is: {reverse_string(input_string)}")
