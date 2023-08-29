@@ -1,0 +1,13 @@
+Objective: 
+Visualize the data using Water Fall Chart.
+Problem Statement:
+Import Sample super store data set into Power BI. Find how much sales happened in Year wise using Water Fall chart.
+Solution:
+
+1.	Import Sample Super Store Data into Power BI Desktop as shown in Task1.
+2.	Clean and Transform the data in Power Query editor. Load the data back to Power BI Desktop.
+3.	Understand the Data or Understand the business
+4.	Categorize all the columns into three buckets (Categorical Columns, Numerical Columns, Date Columns).
+5.	Prepare a Problem statement dealing one categorical and one numerical column ( ex: Year Wise Region Wise Sales).
+6.	Click on Report view tab  Click on Water Fall Chart from Visualizations pane. Maximize the chart for better view. Then the basic structure of the chart will be pasted on to the Report view Canvas.
+
