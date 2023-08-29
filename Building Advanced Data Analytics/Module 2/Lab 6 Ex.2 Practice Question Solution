@@ -1,0 +1,31 @@
+import matplotlib.pyplot as plt
+
+# Days of the month
+days = list(range(1, 31))
+
+# Closing stock prices for the month
+closing_prices = [100, 105, 98, 110, 112, 108, 120, 116, 115, 112,
+                  130, 128, 132, 140, 138, 142, 150, 148, 155, 152,
+                  148, 145, 142, 140, 138, 130, 125, 128, 130, 135]
+
+# Opening stock prices for the month
+opening_prices = [102, 100, 108, 110, 115, 113, 118, 114, 112, 118,
+                  126, 130, 135, 139, 137, 143, 152, 147, 153, 149,
+                  147, 143, 142, 138, 136, 133, 129, 126, 128, 133]
+
+# Create a plot with customized styles
+plt.plot(days, closing_prices, color='blue', marker='o', linestyle='-', linewidth=2, markersize=6, label='Closing Price')
+plt.plot(days, opening_prices, color='green', marker='s', linestyle='--', linewidth=2, markersize=6, label='Opening Price')
+
+# Add labels and title
+plt.xlabel('Days of the Month')
+plt.ylabel('Stock Price')
+plt.title('Stock Price Variation over the Month')
+plt.legend()
+
+# Customize grid and tick marks
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.xticks(range(1, 31, 2))
+
+# Show the plot
+plt.show()
