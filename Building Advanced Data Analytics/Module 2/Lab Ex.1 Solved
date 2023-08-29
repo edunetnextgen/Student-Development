@@ -1,0 +1,35 @@
+Indexing with NumPy arrays in Python
+------------------------------------------
+
+import numpy as np
+
+# Create a 1D NumPy array
+arr1d = np.array([10, 20, 30, 40, 50])
+
+# Accessing elements using positive indexing
+print("Positive indexing:")
+print("First element:", arr1d[0])       # Output: 10
+print("Second element:", arr1d[1])      # Output: 20
+print("Last element:", arr1d[-1])       # Output: 50
+
+# Create a 2D NumPy array
+arr2d = np.array([[1, 2, 3],
+                  [4, 5, 6],
+                  [7, 8, 9]])
+
+# Accessing elements using indexing
+print("\nIndexing in a 2D array:")
+print("Element at (0, 0):", arr2d[0, 0])   # Output: 1
+print("Element at (1, 2):", arr2d[1, 2])   # Output: 6
+
+# Slicing arrays
+print("\nSlicing:")
+print("Slice from index 1 to 3:", arr1d[1:4])              # Output: [20 30 40]
+print("Slice last two elements:", arr1d[-2:])              # Output: [40 50]
+print("Slice rows from index 1:", arr2d[1:])               # Output: [[4 5 6] [7 8 9]]
+print("Slice columns up to index 2:", arr2d[:, :2])        # Output: [[1 2] [4 5] [7 8]]
+
+# Boolean indexing
+print("\nBoolean indexing:")
+bool_mask = arr1d > 25
+print("Elements greater than 25:", arr1d[bool_mask])       # Output: [30 40 50]
