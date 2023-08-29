@@ -1,0 +1,4 @@
+Objective: 
+Find Arithmetic Mean or Average of all the numbers in a Numerical column.
+Problem Statement:
+In Sample Super Store Data set Sales numerical column is there. To calculate Average sales in the data set AVERAGE DAX function is used. To display this Average value Card Visual will be used. 
