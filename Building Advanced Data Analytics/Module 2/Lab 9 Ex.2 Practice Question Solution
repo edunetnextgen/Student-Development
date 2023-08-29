@@ -1,0 +1,51 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Sample dataset (replace with your own dataset)
+data = {
+    'Student_ID': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    'Score': [85, 92, 78, 60, 95, 88, 72, 65, 90, 82],
+    'Age': [18, 19, 20, 18, 21, 20, 19, 18, 22, 21],
+    'Study_Hours': [4, 6, 3, 2, 7, 5, 2, 3, 6, 4]
+}
+
+# Create a DataFrame from the dataset
+df = pd.DataFrame(data)
+
+# Calculate summary statistics
+score_mean = df['Score'].mean()
+score_median = df['Score'].median()
+score_std = df['Score'].std()
+
+study_hours_mean = df['Study_Hours'].mean()
+study_hours_median = df['Study_Hours'].median()
+study_hours_std = df['Study_Hours'].std()
+
+# Visualize distribution using histograms
+plt.figure(figsize=(10, 6))
+
+plt.subplot(1, 2, 1)
+plt.hist(df['Score'], bins=10, edgecolor='black', alpha=0.7)
+plt.xlabel('Score')
+plt.ylabel('Frequency')
+plt.title('Distribution of Exam Scores')
+
+plt.subplot(1, 2, 2)
+plt.hist(df['Study_Hours'], bins=10, edgecolor='black', alpha=0.7)
+plt.xlabel('Study Hours')
+plt.ylabel('Frequency')
+plt.title('Distribution of Study Hours')
+
+plt.tight_layout()
+plt.show()
+
+# Display summary statistics
+print("Summary Statistics for Exam Scores:")
+print("Mean:", score_mean)
+print("Median:", score_median)
+print("Standard Deviation:", score_std)
+
+print("\nSummary Statistics for Study Hours:")
+print("Mean:", study_hours_mean)
+print("Median:", study_hours_median)
+print("Standard Deviation:", study_hours_std)
