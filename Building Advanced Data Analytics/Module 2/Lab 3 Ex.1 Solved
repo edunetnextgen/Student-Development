@@ -1,0 +1,16 @@
+Write a Python program that generates a random array of 10 numbers and calculates the mean and median of the array using NumPy functions.
+-------------------------------------
+
+import numpy as np
+
+# Generate a random array of 10 numbers
+random_array = np.random.rand(10)
+
+# Calculate the mean and median using NumPy functions
+mean_value = np.mean(random_array)
+median_value = np.median(random_array)
+
+# Display the results
+print("Random Array:", random_array)
+print("Mean:", mean_value)
+print("Median:", median_value)
