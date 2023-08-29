@@ -1,0 +1,28 @@
+Step 1: Load Data
+
+Open Power BI Desktop.
+Click on "Home" tab and select "Get Data."
+Choose your data source, in this case, "Excel" or "CSV" to load the Sample Super Store dataset.
+Load the dataset into Power BI.
+Step 2: Create a Measure using AVERAGE DAX Function
+
+In the "Fields" pane on the right, find the "Sales" numerical column.
+Right-click on the column and select "New Measure."
+In the formula bar, use the AVERAGE DAX function to calculate the average of the Sales column. The formula will look like this:
+Step 3: Create a Card Visual
+
+Go to the "Visualizations" pane on the right.
+Select the "Card" visual to add it to your report canvas.
+In the "Values" section of the "Visualizations" pane, drag and drop the "Average Sales" measure that you created in Step 2.
+Step 4: Format the Card Visual
+
+With the Card visual selected, you can format it to make it visually appealing.
+You can change the title of the card to something like "Average Sales" by editing the "Title" property in the "Format" section of the "Visualizations" pane.
+Step 5: Save and Publish
+
+Once you are satisfied with the visualization, save your Power BI report.
+You can then publish the report to Power BI service to share it with others.
+Step 6: Refresh Data (Optional)
+
+If your dataset is regularly updated, you can set up data refresh to keep your report up to date.
+That's it! You've now successfully calculated the average of the "Sales" numerical column using the AVERAGE DAX function and displayed it using a Card Visual in Power BI.
