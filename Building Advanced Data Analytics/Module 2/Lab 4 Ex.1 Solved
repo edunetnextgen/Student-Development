@@ -1,0 +1,31 @@
+You are given temperature data for a week in Celsius. Create a Pandas Series to represent this data and perform various operations on it.
+---------------------------------------
+
+import pandas as pd
+
+# Given temperature data for a week (in Celsius)
+temperature_data = [25, 27, 26, 23, 24, 22, 28]
+
+# Create a Pandas Series from the temperature data
+temperature_series = pd.Series(temperature_data)
+
+# Print the entire Series
+print("Temperature Series:")
+print(temperature_series)
+
+# Find the maximum temperature
+max_temp = temperature_series.max()
+print("Maximum Temperature:", max_temp)
+
+# Calculate the average temperature
+avg_temp = temperature_series.mean()
+print("Average Temperature:", avg_temp)
+
+# Check if there are temperatures above 25°C
+above_25 = temperature_series > 25
+print("Temperatures above 25°C:")
+print(temperature_series[above_25])
+
+# Calculate the temperature range (difference between max and min)
+temp_range = max_temp - temperature_series.min()
+print("Temperature Range:", temp_range)
