@@ -1,0 +1,5 @@
+Objective: 
+Find Month numbers from date data type column.
+Problem Statement:
+In Sample Super Store Data set “Order Date” date data type column is there. To extract Month part from the dates Month DAX function is used. To achieve this a new column will be created. 
+Solution:
