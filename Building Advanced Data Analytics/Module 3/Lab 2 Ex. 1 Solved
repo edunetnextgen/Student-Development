@@ -1,0 +1,29 @@
+Simple Python program that demonstrates different data types:
+
+# Integer
+my_integer = 42
+print("Integer:", my_integer)
+
+# Floating-point number
+my_float = 3.14
+print("Float:", my_float)
+
+# String
+my_string = "Hello, Python!"
+print("String:", my_string)
+
+# Boolean
+my_boolean = True
+print("Boolean:", my_boolean)
+
+# List (a collection of values)
+my_list = [1, 2, 3, 4, 5]
+print("List:", my_list)
+
+# Tuple (an immutable collection of values)
+my_tuple = (10, 20, 30)
+print("Tuple:", my_tuple)
+
+# Dictionary (a collection of key-value pairs)
+my_dict = {"name": "Alice", "age": 30, "city": "Wonderland"}
+print("Dictionary:", my_dict)
