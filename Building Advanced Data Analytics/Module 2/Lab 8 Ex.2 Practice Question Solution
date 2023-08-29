@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Age data of survey respondents
+ages = np.array([25, 32, 28, 45, 52, 38, 42, 30, 29, 35, 40, 48, 55, 50, 22, 27, 33, 41, 37, 31])
+
+# Custom bin edges for the histogram
+bin_edges = [20, 30, 40, 50, 60]
+
+# Create a histogram with custom binning
+plt.hist(ages, bins=bin_edges, edgecolor='black', alpha=0.7)
+
+# Add labels and title
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.title('Age Distribution of Survey Respondents')
+
+# Show the plot
+plt.show()
