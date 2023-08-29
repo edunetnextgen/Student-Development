@@ -1,0 +1,29 @@
+You have the exam scores of a class. Write a Python program to load the scores into a Pandas Series and calculate the mean, median, standard deviation, and the percentage of scores above 70.
+
+-------------------------------------------
+
+import pandas as pd
+
+# Given exam scores of a class
+scores = [85, 92, 78, 60, 95, 88, 72, 65, 90, 82]
+
+# Create a Pandas Series from the exam scores
+scores_series = pd.Series(scores)
+
+# Calculate the mean, median, and standard deviation
+mean_score = scores_series.mean()
+median_score = scores_series.median()
+std_deviation = scores_series.std()
+
+# Calculate the percentage of scores above 70
+above_70_count = scores_series[scores_series > 70].count()
+total_scores = scores_series.count()
+percentage_above_70 = (above_70_count / total_scores) * 100
+
+# Display the results
+print("Exam Scores:")
+print(scores_series)
+print("Mean Score:", mean_score)
+print("Median Score:", median_score)
+print("Standard Deviation:", std_deviation)
+print("Percentage of Scores Above 70:", percentage_above_70, "%")
