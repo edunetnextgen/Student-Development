@@ -1,0 +1,1 @@
+Write a Python program that asks the user for a positive integer. Use a for loop to calculate and display the sum of its digits. For example, if the input is 12345, the sum should be 1 + 2 + 3 + 4 + 5 = 15
