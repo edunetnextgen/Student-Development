@@ -1,0 +1,4 @@
+Objective: 
+Subtract two columns in PQE.
+Problem Statement:
+Import Employee data set into Power BI. In PQE, create a new column called deductions. Fill the column with values taken from first three values of salary. Now subtract total salary and deductions to calculate net salary.  
