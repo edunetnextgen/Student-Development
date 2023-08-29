@@ -1,0 +1,20 @@
+During a hiking trip, a group of friends decided to explore a cave. They encountered a series of tunnels with different lengths. Write a Python program that prompts the user to enter the length of a tunnel in meters. Depending on the length of the tunnel, the program should display a message describing the tunnel's classification:
+
+Tunnels shorter than 100 meters are classified as "Short tunnels."
+Tunnels between 100 and 500 meters are classified as "Medium tunnels."
+Tunnels longer than 500 meters are classified as "Long tunnels."
+-----------------------------------------------------------------------------
+
+# Getting user input
+tunnel_length = float(input("Enter the length of the tunnel in meters: "))
+
+# Conditional statements
+if tunnel_length < 100:
+    classification = "Short tunnels"
+elif tunnel_length <= 500:
+    classification = "Medium tunnels"
+else:
+    classification = "Long tunnels"
+
+# Displaying classification
+print(f"The tunnel with a length of {tunnel_length} meters is classified as {classification}.")
