@@ -1,0 +1,15 @@
+Objective: 
+Add Two Numerical Columns in PQE.
+Problem Statement:
+Import Employee data set into Power BI. In PQE, create a new column to calculate 10% of increment. Add Salary and increment columns to find total salary of each employee.
+Solution:
+
+1.	Load the Employee Data set into Power Query editor as shown in Task2.
+2.	Click on Add column tab  Select Salary Column  Click on Standard  Select Multiply as follows.
+3.	A new window will be opened as follows.
+4.	Enter 0.1(10% increment value on salary)OK. Then a new column will be created as follows.
+5.	Double click on the column name  type Increment
+6.	Now Salary column need to be added to increment column to calculate total salary.
+7.	Click on Add column tab  Select both Salary and increment columns  Click on Standard  Select Add.
+8.	A new column will be created with the two column values added row wise. Double click on the name of the new column  type Total Salary Save.
+
