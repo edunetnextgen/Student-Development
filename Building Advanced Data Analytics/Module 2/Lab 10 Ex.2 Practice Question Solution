@@ -1,0 +1,26 @@
+import scipy.stats as stats
+
+# Given data
+previous_average = 120
+sample_size = 40
+sample_mean = 128
+sample_stddev = 15
+significance_level = 0.05
+
+# Null hypothesis: The new design has no effect (population mean = previous average)
+# Alternative hypothesis: The new design has a positive effect (population mean > previous average)
+
+# Calculate the t-statistic
+t_statistic = (sample_mean - previous_average) / (sample_stddev / (sample_size ** 0.5))
+
+# Calculate the degrees of freedom
+degrees_of_freedom = sample_size - 1
+
+# Calculate the p-value (right-tailed test)
+p_value = 1 - stats.t.cdf(t_statistic, df=degrees_of_freedom)
+
+# Compare p-value with significance level
+if p_value < significance_level:
+    print("Reject the null hypothesis. There is enough evidence to support the claim.")
+else:
+    print("Fail to reject the null hypothesis. There is not enough evidence to support the claim.")
