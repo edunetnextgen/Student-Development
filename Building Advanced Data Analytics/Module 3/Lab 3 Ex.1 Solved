@@ -1,0 +1,14 @@
+Question5: Working with Columns of the data set
+
+Objective:  Combine Multiple Columns into Single column to save memory usage.
+
+Problem Statement: Import the Employee Data into Power BI. In PQE, there are columns like First Name, Middle Name and Last Name. Combine all three columns into Single column with name Full Name. 
+
+Solution:
+1. Load the Employee Data set into Power Query editor as shown in Task2.
+2. Select all the column names (First Name, Middle Name, Last Name) which you need to combine.
+3. Right click on any of these selected column names  select Merge Columns. 
+4. A Merge Columns window will be opened. Select Separator value as “Space” as follows.
+Change the New Column name to “Full Name” as follows.
+6.	Click on “OK” button to see the newly created Full Name column as follows.
+
