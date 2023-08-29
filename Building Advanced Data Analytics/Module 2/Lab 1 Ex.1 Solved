@@ -1,0 +1,48 @@
+Create Numpy Arrays -
+
+1. Using List
+--------------------------------
+import numpy as np
+
+my_list = [1, 2, 3, 4, 5]
+my_array = np.array(my_list)
+
+print(my_array)
+
+
+2. Using Numpy Functions
+-------------------------------
+import numpy as np
+
+# Create an array of zeros
+zeros_array = np.zeros(5)
+
+# Create an array of ones
+ones_array = np.ones(5)
+
+# Create a range of values
+range_array = np.arange(0, 10, 2)  # Start, Stop, Step
+
+print(zeros_array)
+print(ones_array)
+print(range_array)
+
+
+3. Using Random Number
+---------------------------------
+import numpy as np
+
+# Create an array with random values
+random_array = np.random.rand(5)
+
+print(random_array)
+
+
+4. Using Linspace 
+--------------------------------
+import numpy as np
+
+# Create an array with 5 evenly spaced values between 0 and 1
+linspace_array = np.linspace(0, 1, 5)
+
+print(linspace_array)
