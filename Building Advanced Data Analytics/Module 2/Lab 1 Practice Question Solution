@@ -1,0 +1,19 @@
+Ex.1 Solution
+
+import numpy as np
+
+# Create an array with 8 evenly spaced values between 0 and 2
+evenly_spaced_array = np.linspace(0, 2, 8)
+
+print(evenly_spaced_array)
+
+
+Ex.2 Solution
+
+import numpy as np
+
+# Create a diagonal matrix with diagonal values [5, 7, 9]
+diagonal_values = [5, 7, 9]
+diagonal_matrix = np.diag(diagonal_values)
+
+print(diagonal_matrix)
