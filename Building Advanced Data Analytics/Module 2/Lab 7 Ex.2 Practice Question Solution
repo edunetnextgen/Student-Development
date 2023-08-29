@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Exam scores data
+scores = np.array([85, 92, 78, 60, 95, 88, 72, 65, 90, 82, 75, 80])
+
+# Create a box plot
+plt.boxplot(scores)
+
+# Add labels and title
+plt.xlabel('Exam Scores')
+plt.ylabel('Score')
+plt.title('Exam Score Distribution')
+
+# Show the plot
+plt.show()
