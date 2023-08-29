@@ -1,0 +1,17 @@
+Question1: Demo of Importing any Data Source into Power BI
+
+Objective: Importing Excel Data Source into Power BI 
+
+Problem Statement:
+Prepare an Excel data source in your local drive or save sample super store data in your local drive. Now this data source can be imported into Power BI as follows.
+
+Solution:
+1.	Prepare the Excel Data source and Save it in a Folder in the Local Drive
+2.	Open Power BI Desktop application
+3.	Go to Home tab  Click on “Get Data”  Select “Excel Work book”.
+4.	Browse for the Excel Data source in your System. Double click on the required Excel file to connect to Power BI.
+5.	A Navigator Window will be opened. In this window all possible Excel Worksheets in the selected Excel Workbook will be displayed.
+6.	Select one or many worksheets from the above Navigator window. 
+7.	Click on the “Load” option. Automatically the selected Excel Worksheets will be loaded onto Power BI Desktop window. This is called as Importing Data into Power BI.  
+8.	After Import, Power BI Desktop window will be looking like this.
+9.	Observe the selected “Orders” worksheet is imported into Power BI. You can see the Orders table in “Data” Pane above.
