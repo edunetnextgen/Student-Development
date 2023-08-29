@@ -1,0 +1,36 @@
+Python program that demonstrates the use of dictionaries:
+
+# Function to display student details
+def display_student_details(student):
+    print(f"Student ID: {student['id']}")
+    print(f"Name: {student['name']}")
+    print(f"Age: {student['age']}")
+    print(f"Grade: {student['grade']}")
+    print()
+
+# Main program
+students = {}
+
+num_students = int(input("Enter the number of students: "))
+
+for i in range(num_students):
+    student_id = input(f"Enter student {i + 1} ID: ")
+    name = input(f"Enter student {i + 1} name: ")
+    age = int(input(f"Enter student {i + 1} age: "))
+    grade = input(f"Enter student {i + 1} grade: ")
+
+    student = {
+        'id': student_id,
+        'name': name,
+        'age': age,
+        'grade': grade
+    }
+
+    students[student_id] = student
+    print()
+
+# Displaying student details
+print("\nStudent Details:")
+for student_id, student in students.items():
+    print(f"Student ID: {student_id}")
+    display_student_details(student)
