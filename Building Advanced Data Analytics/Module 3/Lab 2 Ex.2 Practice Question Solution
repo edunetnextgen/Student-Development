@@ -1,0 +1,32 @@
+Import Sample Super Store Data:
+Open Power BI Desktop and click on the "Home" tab in the top menu. Select "Get Data" and choose the appropriate source to import the Sample Super Store data. Follow the steps to load the data into Power BI.
+
+Open Power Query Editor (PQE):
+Once the data is loaded, you'll be able to see the data preview. Click on the "Edit Queries" button to open Power Query Editor.
+
+Review Column Data Types:
+In Power Query Editor, you'll see a list of columns and their data types. Each column has an associated data type that Power BI has automatically detected based on the imported data.
+
+Change Data Types:
+To change the data type of a column:
+
+Select the column you want to modify.
+Right-click on the column header and choose "Change Type."
+From the dropdown, select the desired data type.
+Review and Confirm Changes:
+After changing the data type, you'll see a preview of the changes in the right panel. Review the changes and make sure they align with your data and analysis needs.
+
+Apply Changes:
+Once you're satisfied with the changes, click the "Close & Apply" button in the upper-left corner of Power Query Editor. This will apply the changes to the loaded data.
+
+Back to Report View:
+You'll be returned to the Power BI report view. The changes you made in Power Query Editor will be reflected in your report.
+
+Data Model and Visualizations:
+You can now use the corrected data types in your data model and create visualizations in the report view.
+
+Save Your Work:
+Remember to save your Power BI project to keep the changes and your progress.
+
+Publish and Share:
+If you're working collaboratively or want to share insights, you can publish your Power BI report to the Power BI service.
