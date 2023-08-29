@@ -1,0 +1,23 @@
+Objective: 
+Design a Data Model for the Data sets given 
+Problem Statement:
+Import Products CSV Data set and Sales CSV Data set of the business into Power BI. Understand the Data sets and develop a model to relate these two Data sets. 
+Solution:
+
+1.	Import Products and Sales CSV Data sets into Power BI Desktop as similar to Task1.
+2.	Clean and Transform the data in Power Query editor. Load the data back to Power BI Desktop.
+3.	Understand the Data or Understand the business
+4.	Categorize all the columns into three buckets (Categorical Columns, Numerical Columns, Date Columns).
+5.	Click on Model view tab  The data sets will be looking as follows.
+
+ 
+6.	Observe the two data sets properly. Product_ID column is present in both the Data sets. This is the relation between the two data sets in order to combine them. This relation can be formed in two ways i.e. either by manually or by Automatically by Power BI itself.
+7.	Drag the Product_ID column in Sales Data set to the Product_ID column in Products Data set to form the relation between the two Data sets. After Dragging the model will be looking as follows.
+8.	The relation is called as Cardinality. The Cardinality is of Four types depends on the relation between the two Data sets.
+
+•	One to One Cardinality
+•	One to Many Cardinality
+•	Many to One Cardinality
+•	Many to Many Cardinality
+
+9.	From the above Model, it is clear that the Cardinality between Products and Sales Data sets is One(1) to Many(*).
