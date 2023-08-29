@@ -1,0 +1,1 @@
+Write a Python program that allows a teacher to input the names and grades of students. Store this information in a dictionary where the student names are keys and the grades are values. After inputting the data, display the student names and their corresponding grades.
