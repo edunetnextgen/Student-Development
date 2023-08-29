@@ -1,0 +1,14 @@
+# Main program
+num_students = int(input("Enter the number of students: "))
+student_data = {}
+
+for i in range(num_students):
+    name = input(f"Enter the name of student {i + 1}: ")
+    grade = float(input(f"Enter the grade of student {i + 1}: "))
+    student_data[name] = grade
+    print()
+
+# Displaying student names and grades
+print("\nStudent Names and Grades:")
+for name, grade in student_data.items():
+    print(f"Student Name: {name}, Grade: {grade}")
