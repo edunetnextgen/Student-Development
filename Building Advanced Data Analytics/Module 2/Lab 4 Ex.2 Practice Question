@@ -1,0 +1,1 @@
+You have the exam scores of a class. Create a Pandas Series to represent the scores and perform operations to find the minimum, maximum, average, and count of scores above a certain threshold.
