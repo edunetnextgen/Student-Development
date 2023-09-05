@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  Design a simple HTML page that showcases the usage of jQuery selectors. Include a paragraph element with the text "This is a paragraph." Beneath it, add a button labeled "Change Color." When the button is clicked, the background color and text color of the paragraph should toggle between their default state and a selected state. Utilize jQuery to target the elements and handle the click event.
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Selector Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Styling for the selected state */
+        .selected {
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>jQuery Selector Example</h2>
+        <p id="demoText">This is a paragraph.</p>
+        <button id="changeColorButton">Change Color</button>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Select the paragraph and button using jQuery
+            var demoText = $("#demoText");
+            var changeColorButton = $("#changeColorButton");
+
+            // Add a click event handler to the button
+            changeColorButton.click(function() {
+                // Toggle the 'selected' class to change color
+                demoText.toggleClass("selected");
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
