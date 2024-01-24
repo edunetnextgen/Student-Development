@@ -1,0 +1,70 @@
+Develop a Django view and template for user registration in an online forum application. Create a view named register_user that handles user registration using the built-in UserCreationForm. Design a corresponding template, register_user.html, to render the registration form with fields for a unique username, email, and password. Ensure proper validation for input fields and display error messages for any invalid submissions. 
+
+
+# views.py
+from django.shortcuts import render, redirect
+from django.contrib.auth.forms import UserCreationForm
+
+def register_user(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('login')  # Redirect to login page upon successful registration
+    else:
+        form = UserCreationForm()
+    return render(request, 'registration/register_user.html', {'form': form})
+
+<!-- templates/registration/register_user.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>User Registration</h2>
+
+  <form method="post" action="{% url 'register_user' %}">
+    {% csrf_token %}
+    
+    {{ form.as_p }}
+
+    <button type="submit">Register</button>
+  </form>
+
+  {% if form.errors %}
+    <div class="error">
+      <p>Please correct the errors below:</p>
+      {{ form.errors }}
+    </div>
+  {% endif %}
+{% endblock %}
+
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Forum{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>My Forum</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{% url 'register_user' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2022 My Forum. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
