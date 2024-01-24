@@ -1,0 +1,54 @@
+Develop a dynamic webpage with various event-driven interactions as follows:
+
+Design a button that, when clicked, toggles the visibility of a hidden message on the webpage.
+Develop a paragraph element that changes its text content when a user hovers over it.
+Implement a basic animated square that moves horizontally and reverses direction when reaching the edges of its container using CSS keyframes and JavaScript.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <style>
+        /* Add necessary styles for animation */
+        #animatedBox {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+
+        /* Define animation keyframes */
+        @keyframes moveBox {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(200px); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <button id="myButton">Click me</button>
+
+    <p id="myParagraph">Hover over me</p>
+
+    <div id="animatedBox"></div>
+
+    <script>
+        // Button Click Event
+        document.getElementById('myButton').addEventListener('click', function() {
+            alert('Button Clicked!');
+        });
+
+        // Hover Text Change
+        document.getElementById('myParagraph').addEventListener('mouseover', function() {
+            this.textContent = 'Text changed!';
+        });
+
+        // Animated Box
+        const box = document.getElementById('animatedBox');
+        box.style.animation = 'moveBox 2s linear infinite';
+    </script>
+
+</body>
+</html>
