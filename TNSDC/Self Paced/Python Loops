@@ -1,0 +1,18 @@
+Write a Python program to generate prime numbers within a specified range. Prompt the user to enter two integers as the lower and upper limits of the range (inclusive). Implement a function that identifies and prints all prime numbers within this range. 
+
+def is_prime(num):
+    if num < 2:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+lower_limit = int(input("Enter the lower limit: "))
+upper_limit = int(input("Enter the upper limit: "))
+
+if lower_limit >= upper_limit:
+    print("Invalid input. Ensure the lower limit is less than the upper limit.")
+else:
+    primes = [num for num in range(lower_limit, upper_limit + 1) if is_prime(num)]
+    print(f"Prime numbers between {lower_limit} and {upper_limit}: {primes}")
