@@ -1,0 +1,20 @@
+<?php
+// Taking input from the user
+$percentage = readline("Enter the percentage: ");
+
+// Checking the grade classification
+if ($percentage >= 90) {
+    $grade = 'A';
+} elseif ($percentage >= 80 && $percentage < 90) {
+    $grade = 'B';
+} elseif ($percentage >= 70 && $percentage < 80) {
+    $grade = 'C';
+} elseif ($percentage >= 60 && $percentage < 70) {
+    $grade = 'D';
+} else {
+    $grade = 'F';
+}
+
+// Outputting the grade
+echo "The grade for $percentage% is: $grade\n";
+?>
