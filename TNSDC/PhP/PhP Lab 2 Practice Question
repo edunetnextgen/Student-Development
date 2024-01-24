@@ -1,0 +1,9 @@
+Create a PHP program to print the following pattern using nested loops:
+
+*
+**
+***
+****
+*****
+
+The number of rows in the pattern should be determined by user input. The program should take an integer as input and print the pattern with the specified number of rows.
