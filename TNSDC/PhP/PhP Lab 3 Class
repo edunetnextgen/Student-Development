@@ -1,0 +1,37 @@
+Create a PHP program that models a Book class. The class should have attributes such as title, author, and price. Implement a method to calculate the total cost of a given quantity of books. Create instances of the Book class, and calculate and display the total cost for each book, considering a quantity of 5 for each book.
+
+<?php
+class Employee {
+    // Attributes
+    private $id;
+    private $name;
+    private $designation;
+    private $salary;
+
+    // Constructor
+    public function __construct($id, $name, $designation, $salary) {
+        $this->id = $id;
+        $this->name = $name;
+        $this->designation = $designation;
+        $this->salary = $salary;
+    }
+
+    // Method to display employee information
+    public function displayInfo() {
+        echo "Employee ID: $this->id\n";
+        echo "Name: $this->name\n";
+        echo "Designation: $this->designation\n";
+        echo "Salary: $this->salary\n\n";
+    }
+}
+
+// Creating instances of Employee
+$employee1 = new Employee(1, "John Doe", "Software Engineer", 60000);
+$employee2 = new Employee(2, "Jane Smith", "UX Designer", 55000);
+$employee3 = new Employee(3, "Bob Johnson", "Project Manager", 75000);
+
+// Displaying information for each employee
+$employee1->displayInfo();
+$employee2->displayInfo();
+$employee3->displayInfo();
+?>
