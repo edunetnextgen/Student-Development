@@ -1,0 +1,36 @@
+Develop a Python program to calculate fines for speeding violations in Indian Rupees. Implement functions to calculate fines based on predefined criteria and speed thresholds. Use loops to process multiple vehicles and prompt the user for speed limit and recorded speed.
+
+criteria as follows:
+No fine if within 10 km/h over the speed limit.
+₹500 fine for 11 to 20 km/h over.
+₹1000 fine for 21 to 30 km/h over.
+₹2000 fine for over 30 km/h over.
+
+def calculate_fine(speed_limit, recorded_speed):
+    fine_amounts = [0, 500, 1000, 2000]
+    speed_thresholds = [0, 10, 20, 30]
+
+    speed_difference = recorded_speed - speed_limit
+
+    fine_category = 0
+    for threshold in speed_thresholds:
+        if speed_difference > threshold:
+            fine_category += 1
+
+    fine = fine_amounts[fine_category]
+    return fine
+
+def process_vehicle():
+    speed_limit = int(input("Enter speed limit (in km/h): "))
+    recorded_speed = int(input("Enter recorded speed (in km/h): "))
+
+    fine = calculate_fine(speed_limit, recorded_speed)
+    print(f"Fine: ₹{fine}")
+
+# Get the number of vehicles for processing
+num_vehicles = int(input("Enter the number of vehicles to process: "))
+
+# Process each vehicle
+for _ in range(num_vehicles):
+    print("\nProcessing Vehicle:")
+    process_vehicle()
