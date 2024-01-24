@@ -1,0 +1,33 @@
+Write a PHP program that generates the Fibonacci sequence up to a specified number of terms. The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding ones, usually starting with 0 and 1. Allow the user to input the number of terms in the sequence
+
+<?php
+    // Function to generate Fibonacci sequence
+    function generateFibonacci($terms) {
+        $sequence = array();
+        
+        for ($i = 0; $i < $terms; $i++) {
+            if ($i == 0) {
+                $sequence[] = 0;
+            } elseif ($i == 1) {
+                $sequence[] = 1;
+            } else {
+                $sequence[] = $sequence[$i - 1] + $sequence[$i - 2];
+            }
+        }
+
+        return $sequence;
+    }
+
+    // Read the number of terms from the user
+    echo "Enter the number of terms in the Fibonacci sequence: ";
+    $numberOfTerms = intval(readline());
+
+    // Validate if the input is a positive integer
+    if ($numberOfTerms <= 0) {
+        die("Invalid input. Please enter a positive integer for the number of terms.");
+    }
+
+    // Generate and display the Fibonacci sequence
+    $fibonacciSequence = generateFibonacci($numberOfTerms);
+    echo "Fibonacci Sequence: " . implode(', ', $fibonacciSequence) . "\n";
+?>
