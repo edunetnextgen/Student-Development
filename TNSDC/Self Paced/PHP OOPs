@@ -1,0 +1,47 @@
+Design a PHP class named Car that represents a vehicle with properties like make, model, and year. Include methods to display information about the car and calculate its age. Instantiate two Car objects, set their properties, and compare their ages.
+
+<?php
+class Car {
+    private $make;
+    private $model;
+    private $year;
+
+    public function setDetails($make, $model, $year) {
+        $this->make = $make;
+        $this->model = $model;
+        $this->year = $year;
+    }
+
+    public function displayInfo() {
+        echo "Car Details: $this->year $this->make $this->model\n";
+    }
+
+    public function calculateAge($currentYear) {
+        return $currentYear - $this->year;
+    }
+}
+
+// Example usage:
+$car1 = new Car();
+$car1->setDetails("Toyota", "Camry", 2018);
+
+$car2 = new Car();
+$car2->setDetails("Honda", "Civic", 2015);
+
+$currentYear = 2024;
+
+$car1->displayInfo();
+echo "Age of Car 1: " . $car1->calculateAge($currentYear) . " years\n";
+
+$car2->displayInfo();
+echo "Age of Car 2: " . $car2->calculateAge($currentYear) . " years\n";
+
+// Compare ages
+if ($car1->calculateAge($currentYear) > $car2->calculateAge($currentYear)) {
+    echo "Car 1 is older than Car 2.\n";
+} elseif ($car1->calculateAge($currentYear) < $car2->calculateAge($currentYear)) {
+    echo "Car 2 is older than Car 1.\n";
+} else {
+    echo "Both cars are of the same age.\n";
+}
+?>
