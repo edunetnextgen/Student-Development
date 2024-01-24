@@ -1,0 +1,35 @@
+Write a PHP program that takes the bill amount as input and calculates the discount based on the following rules:
+
+If the bill amount is between ₹1000 and ₹4999 (inclusive), apply a 10% discount.
+If the bill amount is ₹5000 or more, apply a 20% discount.
+Display the original bill amount, the calculated discount, and the final amount after applying the discount.
+
+<?php
+    // Function to calculate discount based on bill amount
+    function calculateDiscount($billAmount) {
+        $discount = 0;
+
+        if ($billAmount >= 1000 && $billAmount <= 4999) {
+            // Apply 10% discount for bill amount between ₹1000 and ₹4999
+            $discount = 0.1 * $billAmount;
+        } elseif ($billAmount >= 5000) {
+            // Apply 20% discount for bill amount ₹5000 and above
+            $discount = 0.2 * $billAmount;
+        }
+
+        return $discount;
+    }
+
+    // Example usage:
+    $billAmount1 = 3000;
+    $discount1 = calculateDiscount($billAmount1);
+
+    if ($discount1 > 0) {
+        echo "Original Bill Amount: ₹$billAmount1\n";
+        echo "Discount: ₹$discount1\n";
+        echo "Final Amount after Discount: ₹" . ($billAmount1 - $discount1) . "\n";
+    } else {
+        echo "Original Bill Amount: ₹$billAmount1\n";
+        echo "No discount applicable for the given bill amount.\n";
+    }
+?>
