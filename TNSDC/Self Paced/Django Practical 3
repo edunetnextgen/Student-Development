@@ -1,0 +1,135 @@
+Develop a Django project for a basic blog platform. Create a Post model with fields for title, content, pub_date, and author. Implement two views: one to display a paginated list of all blog posts sorted by publication date, and another to show detailed information about a specific post. Set up URL patterns, design HTML templates for views, and include simple styling using static files. Additionally, allow users to submit new blog posts through a form on a separate page. Ensure proper handling of form submissions, validate input, and display relevant error messages when necessary.
+
+1. Create a new Django project:
+
+django-admin startproject blog_project
+cd blog_project
+
+2. Create a new Django app:
+
+python manage.py startapp blog
+
+3. Define the Post model in blog/models.py:
+
+# blog/models.py
+from django.db import models
+
+class Post(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    pub_date = models.DateTimeField(auto_now_add=True)
+    author = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.title
+
+4. Configure the app in settings.py:
+
+# blog_project/settings.py
+INSTALLED_APPS = [
+    # ...
+    'blog',
+    # ...
+]
+
+5. Implement views in blog/views.py:
+
+# blog/views.py
+from django.shortcuts import render, get_object_or_404
+from .models import Post
+from .forms import PostForm
+from django.shortcuts import redirect
+
+def post_list(request):
+    posts = Post.objects.order_by('-pub_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+
+def post_detail(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
+
+def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
+
+6. Configure URLs in blog/urls.py:
+
+# blog/urls.py
+from django.urls import path
+from .views import post_list, post_detail, post_new
+
+urlpatterns = [
+    path('posts/', post_list, name='post_list'),
+    path('posts/<int:pk>/', post_detail, name='post_detail'),
+    path('posts/new/', post_new, name='post_new'),
+]
+
+7. Include app URLs in the project's urls.py:
+
+# blog_project/urls.py
+from django.contrib import admin
+from django.urls import path, include
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
+]
+
+8. Create templates:
+
+templates/blog/post_list.html
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Blog Posts</h2>
+
+  <!-- Post list -->
+  <ul>
+    {% for post in posts %}
+      <li><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }} by {{ post.author }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
+
+templates/blog/post_detail.html
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{{ post.title }} by {{ post.author }}</h2>
+  <p>{{ post.content }}</p>
+  <p>Published on {{ post.pub_date|date:"F j, Y H:i" }}</p>
+{% endblock %}
+
+templates/blog/post_edit.html
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>New Post</h2>
+  <form method="POST" class="post-form">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+  </form>
+{% endblock %}
+
+9. Create a forms.py in the blog app:
+
+# blog/forms.py
+from django import forms
+from .models import Post
+
+class PostForm(forms.ModelForm):
+    class Meta:
+        model = Post
+        fields = ['title', 'content', 'author']
+
