@@ -1,0 +1,25 @@
+Write JavaScript Functions to perform the following:​
+To calculate the factorial of a given positive integer. The factorial of a number is the product of all positive integers up to that number.​
+To generate the multiplication table (up to 10) for a given number.
+
+function calculateFactorial(n) {
+    if (n === 0 || n === 1) {
+        return 1;
+    } else {
+        return n * calculateFactorial(n - 1);
+    }
+}
+
+// Example usage:
+const result = calculateFactorial(5);
+console.log(result); // Output: 120
+
+function generateMultiplicationTable(num) {
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${num} x ${i} = ${num * i}`);
+    }
+}
+
+// Example usage:
+generateMultiplicationTable(5);
+​
