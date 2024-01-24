@@ -1,0 +1,71 @@
+Create a Python and MySQL-based reservation system for a small hotel, implementing booking, availability checking, and cancellation functionalities.
+
+Step 1) Download and install MySQL8:
+
+Download and install MySQL8 from this link.
+Step 2) Run MySQL Workbench:
+
+Run MySQL Workbench after installing MySQL8 for database management.
+Step 3) Open the command line terminal:
+
+Open the command line terminal (CMD) to execute commands.
+Step 4) Install MySQL connector:
+
+Install the MySQL connector for Python using the command python -m pip install mysql-connector-python.
+Step 5) Test MySQL connector:
+
+Confirm the installation by importing the MySQL connector in Python with the command import mysql.connector.
+Step 6) Create a .py file and write code:
+
+import mysql.connector
+from datetime import datetime
+
+# Connect to MySQL database
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="YourPassword",
+    database="hotel"
+)
+mycursor = mydb.cursor()
+
+# Create Reservation table
+mycursor.execute("CREATE TABLE reservations (id INT AUTO_INCREMENT PRIMARY KEY, guest_name VARCHAR(255), check_in DATE, check_out DATE)")
+
+# Book a reservation
+def book_reservation(guest_name, check_in, check_out):
+    sql_insert = "INSERT INTO reservations (guest_name, check_in, check_out) VALUES (%s, %s, %s)"
+    val_insert = (guest_name, check_in, check_out)
+    mycursor.execute(sql_insert, val_insert)
+    mydb.commit()
+    print("Reservation booked successfully.")
+
+# Display all reservations
+mycursor.execute("SELECT * FROM reservations")
+myresult = mycursor.fetchall()
+for reservation in myresult:
+    print(reservation)
+
+# Check availability for a specific date range
+def check_availability(start_date, end_date):
+    sql_check = "SELECT * FROM reservations WHERE (check_in <= %s AND check_out >= %s) OR (check_in <= %s AND check_out >= %s)"
+    val_check = (end_date, start_date, start_date, end_date)
+    mycursor.execute(sql_check, val_check)
+    result = mycursor.fetchall()
+    if not result:
+        print("Rooms are available for the specified date range.")
+    else:
+        print("Rooms are not available for the specified date range.")
+
+# Cancel a reservation
+def cancel_reservation(reservation_id):
+    sql_cancel = "DELETE FROM reservations WHERE id = %s"
+    val_cancel = (reservation_id,)
+    mycursor.execute(sql_cancel, val_cancel)
+    mydb.commit()
+    print("Reservation cancelled successfully.")
+
+# Example usage
+book_reservation("John Doe", datetime(2024, 2, 1), datetime(2024, 2, 5))
+check_availability(datetime(2024, 2, 3), datetime(2024, 2, 7))
+cancel_reservation(1)
