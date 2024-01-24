@@ -1,0 +1,12 @@
+<?php
+// Taking input from the user
+$rows = readline("Enter the number of rows for the pattern: ");
+
+// Printing the pattern using nested loops
+for ($i = 1; $i <= $rows; $i++) {
+    for ($j = 1; $j <= $i; $j++) {
+        echo "*";
+    }
+    echo "\n";
+}
+?>
