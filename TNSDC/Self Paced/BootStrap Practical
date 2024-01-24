@@ -1,0 +1,98 @@
+Build a dynamic and responsive webpage for a music festival using Bootstrap. Utilize Bootstrap's Accordion for a collapsible schedule, Cards to showcase artists with images and descriptions, and Badges to highlight music genres. Enhance visual appeal with Bootstrap's Carousel for festival highlights. Design a user-friendly navigation bar using Bootstrap Navbar, customize the theme with CSS, and ensure responsiveness
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Festival</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom CSS for an appealing theme */
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .artist-card {
+            margin-bottom: 20px;
+        }
+
+        .badge-genre {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Music Festival</a>
+    </nav>
+
+    <div class="container mt-5">
+
+        <!-- Festival Schedule Accordion -->
+        <div class="accordion" id="scheduleAccordion">
+            <!-- Add Accordion items for each performance -->
+            <div class="card">
+                <div class="card-header" id="performance1">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePerformance1" aria-expanded="true" aria-controls="collapsePerformance1">
+                            Performance 1
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapsePerformance1" class="collapse show" aria-labelledby="performance1" data-parent="#scheduleAccordion">
+                    <div class="card-body">
+                        Schedule details for Performance 1.
+                    </div>
+                </div>
+            </div>
+            <!-- Add more Accordion items as needed -->
+        </div>
+
+        <!-- Artist Showcase Cards -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card artist-card">
+                    <img src="artist1.jpg" class="card-img-top" alt="Artist 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Artist 1</h5>
+                        <p class="card-text">Description of Artist 1.</p>
+                        <span class="badge badge-genre">Genre 1</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more artist cards as needed -->
+        </div>
+
+        <!-- Festival Highlights Carousel -->
+        <div id="festivalCarousel" class="carousel slide mt-5" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Add Carousel items for festival highlights -->
+                <div class="carousel-item active">
+                    <img src="highlight1.jpg" class="d-block w-100" alt="Highlight 1">
+                </div>
+                <!-- Add more Carousel items as needed -->
+            </div>
+            <a class="carousel-control-prev" href="#festivalCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#festivalCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
