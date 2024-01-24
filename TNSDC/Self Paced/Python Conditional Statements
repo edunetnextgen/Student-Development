@@ -1,0 +1,21 @@
+Write a simple Python program to determine the cost of admission to a zoo based on the age of a visitor. Prompt the user to enter their age, and then display the admission cost in Indian Rupees (INR) according to the following criteria:
+
+Children (age 0-5): Free
+Kids (age 6-12): ₹50
+Teenagers and Adults (age 13-59): ₹100
+Seniors (age 60 and above): ₹70
+
+age = int(input("Enter your age: "))
+
+if age < 0:
+    print("Invalid age. Please enter a valid age.")
+elif age <= 5:
+    print("The admission is free for children (age 0-5).")
+elif 6 >= age <= 12:
+    print("The admission cost for kids (age 6-12) is ₹50.")
+elif 13 >= age <= 59:
+    print("The admission cost for teenagers and adults (age 13-59) is ₹100.")
+elif age >= 60:
+    print("The admission cost for seniors (age 60 and above) is ₹70.")
+else:
+    print("Invalid input. Please enter a valid integer for age.")
