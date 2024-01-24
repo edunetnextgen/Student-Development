@@ -1,1 +1,13 @@
 Write a PHP program that takes an integer as input and determines whether it is an odd or even number. The program should then print a message indicating whether the input number is odd or even
+
+<?php
+// Taking input from the user
+$number = readline("Enter an integer: ");
+
+// Checking if the number is odd or even
+if ($number % 2 == 0) {
+    echo "$number is an even number.\n";
+} else {
+    echo "$number is an odd number.\n";
+}
+?>
