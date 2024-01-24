@@ -1,0 +1,7 @@
+Create a PHP program that calculates the grade classification based on a student's percentage score. The program should take the percentage as input and use the following criteria:
+
+If the percentage is greater than or equal to 90, the grade is 'A'.
+If the percentage is between 80 and 89, the grade is 'B'.
+If the percentage is between 70 and 79, the grade is 'C'.
+If the percentage is between 60 and 69, the grade is 'D'.
+If the percentage is below 60, the grade is 'F'.
