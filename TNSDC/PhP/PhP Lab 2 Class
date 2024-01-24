@@ -1,0 +1,17 @@
+Write a PHP program to calculate the factorial of a given positive integer n. The program should use a loop to perform the calculation and then output the result.
+
+<?php
+// Taking input from the user
+$n = readline("Enter a positive integer: ");
+
+// Initializing the factorial variable
+$factorial = 1;
+
+// Calculating the factorial using a loop
+for ($i = 1; $i <= $n; $i++) {
+    $factorial *= $i;
+}
+
+// Outputting the result
+echo "The factorial of $n is: $factorial\n";
+?>
