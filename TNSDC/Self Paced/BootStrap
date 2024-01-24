@@ -1,0 +1,89 @@
+Create a responsive event registration webpage using Bootstrap. Include a registration form with participant details, a navigation bar for easy access, and a featured event card. Apply custom CSS for an appealing design and ensure responsiveness for various devices.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .custom-card {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">Event Registration</a>
+    </nav>
+
+    <div class="container mt-5 form-container">
+
+        <!-- Registration Form -->
+        <form>
+            <div class="form-group">
+                <label for="participantName">Name</label>
+                <input type="text" class="form-control" id="participantName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="participantEmail">Email</label>
+                <input type="email" class="form-control" id="participantEmail" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="eventSelection">Select Event</label>
+                <select class="form-control" id="eventSelection">
+                    <option>Event 1</option>
+                    <option>Event 2</option>
+                    <option>Event 3</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register</button>
+        </form>
+
+        <!-- Featured Event Card -->
+        <div class="card custom-card mt-4">
+            <h5 class="card-title">Featured Event</h5>
+            <p class="card-text">Join us for an exciting experience! Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn btn-light">Learn More</a>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
