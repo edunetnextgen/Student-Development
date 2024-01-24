@@ -1,0 +1,31 @@
+You are developing a Django application for managing a library. The application includes a model named Book with fields such as title, author, publication_date, and is_available (a boolean field indicating whether the book is currently available for borrowing). Your task is to create a Django view that displays a list of available books sorted by their publication date in descending order. Write the code for the view, including filtering, and ensure that only available books are included in the list.
+
+# views.py
+from django.shortcuts import render
+from .models import Book
+
+def available_books(request):
+    # Retrieve available books sorted by publication date in descending order
+    available_books = Book.objects.filter(is_available=True).order_by('-publication_date')
+
+    # Pass the queryset and other context to the template for rendering
+    return render(request, 'available_books.html', {'available_books': available_books})
+
+
+<!-- available_books.html (template) -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Available Books</h2>
+
+  <!-- Available book list -->
+  {% if available_books %}
+    <ul>
+      {% for book in available_books %}
+        <li>{{ book.title }} by {{ book.author }} (Published on {{ book.publication_date|date:"F j, Y" }})</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No available books at the moment.</p>
+  {% endif %}
+{% endblock %}
