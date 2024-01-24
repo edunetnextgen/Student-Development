@@ -1,0 +1,28 @@
+Develop a Python program that showcases the Student class, featuring a constructor to set the student's name and age attributes. Implement methods within the class to display student information, calculate the birth year, and update the age.
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def display_info(self):
+        print("Student Information:")
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age} years")
+
+    def calculate_birth_year(self, current_year):
+        birth_year = current_year - self.age
+        print(f"\nBirth Year Calculation:")
+        print(f"Birth Year: {birth_year}")
+
+    def update_age(self):
+        self.age += 1
+        print(f"\nUpdated Age Information:")
+        print(f"Updated Age: {self.age} years")
+
+# Example Usage
+current_year = 2023
+student1 = Student("Alice", 20)
+student1.display_info()
+student1.calculate_birth_year(current_year)
+student1.update_age()
