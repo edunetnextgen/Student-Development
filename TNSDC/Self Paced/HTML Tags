@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Travel Destinations</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Favorite Travel Destinations</h1>
+
+    <ul>
+        <li>
+            <h2>Paris, France</h2>
+            <img src="paris.jpg" alt="Eiffel Tower in Paris">
+            <p>A city known for its romantic ambiance, rich history, and iconic landmarks like the Eiffel Tower.</p>
+            <a href="https://www.visitparis.fr/en" target="_blank">Learn more about Paris</a>
+        </li>
+        <li>
+            <h2>Santorini, Greece</h2>
+            <img src="santorini.jpg" alt="Santorini, Greece">
+            <p>An enchanting Greek island with stunning sunsets, white-washed buildings, and crystal-clear waters.</p>
+            <a href="https://www.visitgreece.gr/islands/cyclades/santorini/" target="_blank">Learn more about Santorini</a>
+        </li>
+    </ul>
+
+    <table>
+        <tr>
+            <th>Destination</th>
+            <th>Description</th>
+            <th>Image</th>
+            <th>Learn More</th>
+        </tr>
+        <tr>
+            <td>Paris, France</td>
+            <td>A city known for its romantic ambiance, rich history, and iconic landmarks like the Eiffel Tower.</td>
+            <td><img src="paris.jpg" alt="Eiffel Tower in Paris"></td>
+            <td><a href="https://www.visitparis.fr/en" target="_blank">Learn more</a></td>
+        </tr>
+        <tr>
+            <td>Santorini, Greece</td>
+            <td>An enchanting Greek island with stunning sunsets, white-washed buildings, and crystal-clear waters.</td>
+            <td><img src="santorini.jpg" alt="Santorini, Greece"></td>
+            <td><a href="https://www.visitgreece.gr/islands/cyclades/santorini/" target="_blank">Learn more</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
