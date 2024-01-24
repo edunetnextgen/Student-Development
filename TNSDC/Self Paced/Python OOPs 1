@@ -1,0 +1,16 @@
+Create a Python program that defines a Book class with a constructor (__init__) to initialize the title, author, and publication year attributes. The class should also include a display_info method to print detailed information about the book.
+
+class Book:
+    def __init__(self, title, author, publication_year):
+        self.title = title
+        self.author = author
+        self.publication_year = publication_year
+
+    def display_info(self):
+        print("Book Information:")
+        print(f"Title: \"{self.title}\"")
+        print(f"Author: {self.author}")
+        print(f"Publication Year: {self.publication_year}")
+
+book1 = Book("The Catcher in the Rye", "J.D. Salinger", 1951)
+book1.display_info()
