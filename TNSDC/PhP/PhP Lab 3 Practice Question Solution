@@ -1,0 +1,58 @@
+Design a PHP program to model a BankAccount class. The class should have attributes such as accountNumber, accountHolder, and balance. Implement methods for depositing and withdrawing money, and ensure that the balance is updated accordingly. Create instances of the BankAccount class, perform deposit and withdrawal operations, and display the updated balance for each account.
+
+<?php
+class BankAccount {
+    // Attributes
+    private $accountNumber;
+    private $accountHolder;
+    private $balance;
+
+    // Constructor
+    public function __construct($accountNumber, $accountHolder, $balance) {
+        $this->accountNumber = $accountNumber;
+        $this->accountHolder = $accountHolder;
+        $this->balance = $balance;
+    }
+
+    // Method to deposit money
+    public function deposit($amount) {
+        if ($amount > 0) {
+            $this->balance += $amount;
+            echo "Deposited $amount. New balance: $this->balance\n";
+        } else {
+            echo "Invalid deposit amount\n";
+        }
+    }
+
+    // Method to withdraw money
+    public function withdraw($amount) {
+        if ($amount > 0 && $amount <= $this->balance) {
+            $this->balance -= $amount;
+            echo "Withdrawn $amount. New balance: $this->balance\n";
+        } else {
+            echo "Invalid withdrawal amount\n";
+        }
+    }
+
+    // Method to display account information
+    public function displayInfo() {
+        echo "Account Number: $this->accountNumber\n";
+        echo "Account Holder: $this->accountHolder\n";
+        echo "Balance: $this->balance\n\n";
+    }
+}
+
+// Creating instances of BankAccount
+$account1 = new BankAccount(123456, "John Doe", 1000);
+$account2 = new BankAccount(789012, "Jane Smith", 500);
+
+// Performing operations and displaying information
+$account1->displayInfo();
+$account1->deposit(200);
+$account1->withdraw(50);
+$account1->displayInfo();
+
+$account2->displayInfo();
+$account2->withdraw(100);
+$account2->displayInfo();
+?>
