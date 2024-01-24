@@ -1,0 +1,38 @@
+Create a MySQL database "SchoolDB" with a "Student" table, including columns for student_id, first_name, last_name, age, and grade. Perform CRUD operations
+
+-- Create a new database
+CREATE DATABASE IF NOT EXISTS SchoolDB;
+
+-- Switch to the new database
+USE SchoolDB;
+
+-- Create a student table
+CREATE TABLE IF NOT EXISTS Student (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    last_name VARCHAR(50) NOT NULL,
+    age INT,
+    grade VARCHAR(10)
+);
+
+-- Insert a new student
+INSERT INTO Student (first_name, last_name, age, grade) VALUES ('John', 'Doe', 15, '10th');
+
+-- Insert another student
+INSERT INTO Student (first_name, last_name, age, grade) VALUES ('Jane', 'Smith', 16, '11th');
+
+
+-- Select all students
+SELECT * FROM Student;
+
+-- Select students in a specific grade
+SELECT * FROM Student WHERE grade = '10th';
+
+-- Select a specific student by ID
+SELECT * FROM Student WHERE student_id = 1;
+
+-- Update the grade of a student
+UPDATE Student SET grade = '11th' WHERE student_id = 1;
+
+-- Delete a student by ID
+DELETE FROM Student WHERE student_id = 2;
