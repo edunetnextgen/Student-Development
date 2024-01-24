@@ -1,0 +1,1 @@
+Design a PHP program to model a BankAccount class. The class should have attributes such as accountNumber, accountHolder, and balance. Implement methods for depositing and withdrawing money, and ensure that the balance is updated accordingly. Create instances of the BankAccount class, perform deposit and withdrawal operations, and display the updated balance for each account.
