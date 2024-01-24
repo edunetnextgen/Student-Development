@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Awareness Campaign</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Environmental Awareness Campaign</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#eco-initiatives">Eco-Friendly Initiatives</a></li>
+            <li><a href="#upcoming-events">Upcoming Events</a></li>
+            <li><a href="#volunteer-opportunities">Volunteer Opportunities</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="eco-initiatives">
+            <h2>Eco-Friendly Initiatives</h2>
+            <p>Explore our initiatives dedicated to promoting environmental sustainability...</p>
+            <!-- Additional content goes here -->
+        </section>
+
+        <section id="upcoming-events">
+            <h2>Upcoming Events</h2>
+            <p>Check out our upcoming events and join us in spreading environmental awareness...</p>
+            <!-- Additional content goes here -->
+        </section>
+
+        <section id="volunteer-opportunities">
+            <h2>Volunteer Opportunities</h2>
+            <p>Get involved! Discover ways you can contribute to our environmental efforts...</p>
+            <!-- Additional content goes here -->
+        </section>
+
+    </main>
+
+    <aside>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="#eco-initiatives">Eco-Friendly Initiatives</a></li>
+            <li><a href="#upcoming-events">Upcoming Events</a></li>
+            <li><a href="#volunteer-opportunities">Volunteer Opportunities</a></li>
+            <li><a href="#subscribe">Subscribe</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <section id="subscribe">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated on our campaigns and initiatives. Subscribe to our newsletter...</p>
+            <!-- Subscription form goes here -->
+        </section>
+        
+        <p>&copy; 2023 Environmental Awareness Campaign. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
