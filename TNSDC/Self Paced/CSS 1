@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-family: 'Georgia', serif;
+            color: #3498db;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .experience h3 {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills li {
+            font-weight: bold;
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>John Doe</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <section class="experience">
+        <h2>Work Experience</h2>
+        <div>
+            <h3>Front-end Developer - ABC Company</h3>
+            <p>Developed user interfaces for web applications using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div>
+            <h3>UI/UX Designer - XYZ Agency</h3>
+            <p>Collaborated with design and development teams to create visually appealing and user-friendly interfaces.</p>
+        </div>
+    </section>
+
+    <section class="education">
+        <h2>Education</h2>
+        <div>
+            <h3>Bachelor's in Computer Science - University XYZ</h3>
+            <p>Graduated with honors in Computer Science, specializing in web development.</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+</body>
+</html>
